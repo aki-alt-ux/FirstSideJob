@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+}
+
+.item {
+  width: 30%;
+  padding: 20px;
+}
+
+.item:nth-child(1) {
+  background: #ffe966;
+}
+
+.item:nth-child(2) {
+  background: #72e8a7;
+}
+
+.item:nth-child(3) {
+  background: #84ceef;
+}

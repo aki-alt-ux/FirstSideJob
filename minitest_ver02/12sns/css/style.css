@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    border: solid;
+}
+
+.main {
+    width: 48rem;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    height: 16rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    background-color: lightgreen;
+}
+
+.main-image {
+    border-radius: 50%;
+    width: 12rem;
+}
+
+.main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    margin: 1rem auto;
+    padding: 1.25rem;
+    background-color: green;
+    border-radius: 1.25rem;
+    line-height: 0;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.sns-list {
+    width: 16rem;
+    margin: 0 auto;
+    /* cssを追記 */
+}
+
+.sns-list li {
+    list-style: none;
+}
+
+.sns-list-item {
+    font-size: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ccc;
+    color: #fff;
+    /* cssを追記 */
+}
+  

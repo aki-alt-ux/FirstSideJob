@@ -1,0 +1,38 @@
+header {
+  padding-bottom: 40px;
+  background-color: #f4769a;
+  border: 2px solid #000;
+}
+
+main {
+  display: flex;
+  column-gap: 20px;
+  padding: 20px;
+  background-color: #eaeaea;
+  border: 2px solid #000;
+}
+
+nav {
+  width: 20%;
+  background-color: #ffd166;
+  border: 2px solid #000;
+
+}
+
+article {
+  width: 60%;
+  background-color: #ffe966;
+  border: 2px solid #000;
+}
+
+aside {
+  width: 20%;
+  background-color: #6df2c9;
+border: 2px solid #000;
+}
+
+footer {
+  padding-bottom: 40px;
+  background-color: #2f92dd;
+  border: 2px solid #000;
+}

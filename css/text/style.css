@@ -1,0 +1,16 @@
+div {
+  text-align: center; /*横方向の整列*/
+}
+
+p {
+  color: red;/*文字色*/
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif; /* フォント */
+  font-size: 24px; /* 文字サイズ */
+  font-weight: 700; /*文字の太さ*/
+  line-height: 2; /*行間*/
+  letter-spacing: 10px; /*字間*/
+}
+
+img {
+  vertical-align: bottom;/*縦方向の整列*/
+}

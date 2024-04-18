@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    border: solid;
+}
+
+header {
+    width: 30vw;
+    margin: 1vw;
+    margin-bottom: 2vw;
+}
+
+h1 {
+  margin-bottom: 1vw;
+}
+
+.heder-content {
+    margin: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.header-content-image {
+    width: 10vw;
+    display: block;
+    margin-bottom: 0.5vw;
+}
+
+#cat1 {
+    border: solid red 3px;
+}

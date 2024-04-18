@@ -1,0 +1,18 @@
+h1 {
+  color: red;
+}
+h1 {
+  color: red;
+}
+.bbb h1 {
+  color: red;
+}
+h1#ccc  {
+  color: rgb(151, 189, 232);
+}
+
+.aaa {
+  background-image: url('../images/dog.jpg');
+  height: 300px;
+  background-repeat: no-repeat;
+}

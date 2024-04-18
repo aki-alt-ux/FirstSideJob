@@ -1,0 +1,19 @@
+header {
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  background-color: #F4769A;
+  border: 2px solid #000;
+}
+
+main {
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  background-color: #FFE966;
+  border: 2px solid #000;
+}
+
+footer {
+  padding-bottom: 40px;
+  background-color: #2f92dd;
+  border: 2px solid #000;
+}

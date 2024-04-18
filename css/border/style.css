@@ -1,0 +1,25 @@
+div {
+  width: 100px; /*横幅*/
+  height: 100px; /*縦幅*/
+  margin-bottom: 10px; /*余白*/
+}
+
+.border {
+  border: 2px solid #000000; /*線*/
+}
+
+.border-top {
+  border-top: #000000 solid 2px; /*線*/
+}
+
+.border-right {
+  border-right: #000000 solid 2px; /*線*/
+}
+
+.border-bottom {
+  border-bottom: #000000 solid 2px; /*線*/
+}
+
+.border-left {
+  border-left:#000000 solid 2px; /*線*/
+}

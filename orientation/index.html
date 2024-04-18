@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>文章の基本</title>
+  <meta name="description" content="文書の説明は検索エンジンの検索結果ページに表示されるため、タイトルと並びSEO上非常に重要です。">
+  <!--OGP-->
+  <meta property="og:site_name" content="サイト名">
+  <meta property="og:title" content="タイトル">
+  <meta property="og:description" content="説明">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="url">
+  <meta property="og:image" content="画像url">
+  <meta property="og:locale" content="ja_JP">
+  <link rel="stylesheet" href=".style.css">
+</head>
+<body>
+  <header>
+    <a href="//techacademy.jp/"><img src="https://techacademy.jp/_nuxt/img/logo-blue.5e6bcca.svg" alt="テックアカデミー" width="300"></a>
+  </header>
+
+  <main>
+    <article>
+
+    <h1>最初のWebサイト</h1>
+
+    <section>
+      <h2>HTMLとは</h2>
+
+      <p>
+        HTMLは、ハイパーテキストマークアップの略で、<br>Web上の文書を記述するためのマークアップ言語です。
+      </p>
+    </section>
+
+    <section>
+      <h2>Webサイトで使用する言語</h2>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Webページにおける文書(情報のまとめ役)を担当します。</dd>
+
+        <dt>CSS</dt>
+        <dd>Webページにおけるデザイン(見た目を整える役)を担当します。</dd>
+
+        <dt>JavaScript</dt>
+        <dd>HTMLやCSSへの動的な操作をするために使います。</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>テーブルとフォーム</h2>
+
+    <div>
+      <h3>テーブル</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>名前</th>
+            <th>メールアドレス</th>
+            <th>電話番号</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>煌木　太郎</td>
+            <td>taro.kirameki@example.com</td>
+            <td>09011112222</td>
+          </tr>
+          <tr>
+            <td>煌木　次郎</td>
+            <td>jiro.kirameki@example.com</td>
+            <td>09033334444</td>
+          </tr>
+          <tr>
+            <td>煌木　花子</td>
+            <td>hanako.kirameki@example.com</td>
+            <td>09055556666</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h3>フォーム</h3>
+      <form>
+        <label for="name">名前</label>
+        <input type="text" id="name" placeholder="例：田中　太郎">
+        <br>
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" placeholder="info@example.jp">
+      </form>
+    </div>
+    </section>
+
+    </article>
+    <aside>
+      <nav>
+        <ul>
+          <li>順序なしリスト1</li>
+          <li>順序なしリスト2</li>
+          <li>順序なしリスト3</li>
+          <li>順序なしリスト4</li>
+        </ul>
+      </nav>
+    </aside>
+  </main>
+
+  <footer>
+    <ol>
+      <li>順序ありリスト1</li>
+      <li>順序ありリスト2</li>
+      <li>順序ありリスト3</li>
+      <li>順序ありリスト4</li>
+    </ol>
+  </footer>
+</body>
+</html>

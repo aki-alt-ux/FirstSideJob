@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    border: solid;
+}
+
+body {
+    font-size: 1.6vw;
+}
+
+.header {
+    padding-left: 20%;
+}
+
+.header-inner-content {
+    height: 50%;
+}
+
+.header-inner-content img {
+    height: 100%;
+}
+
+/* 以下にCSSを追記 */

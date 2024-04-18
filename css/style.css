@@ -1,0 +1,77 @@
+h1{
+  color:red;
+}
+
+p{
+  margin: 40px;
+}
+
+p.important{
+  color: red;
+}
+
+.important{
+  color: red;
+}
+
+#important{
+  color: blue;
+}
+
+article p {
+  color: orange;
+}
+
+h2 + p {
+  color: pink;
+}
+
+a[href="https://techacademy.jp"]{
+  color: green;
+}
+
+a:hover{
+  color: #ff0000;
+}
+
+/* 一番最初の要素 */
+.first-last li:first-child{
+  color: red;
+}
+
+/* 一番最後の要素 */
+.first-last li:last-child{
+  color: orange;
+}
+
+/* 2番目の要素 */
+.nth-child li:nth-child(2){
+  color:blue;
+}
+
+/* 3倍の整数に該当する順番の要素 */
+.nth-child li:nth-child(3n){
+  color: gray;
+}
+
+/* 奇数の要素 */
+.odd-even li:nth-child(odd){
+  background: yellow;
+}
+
+/* 偶数の要素 */
+.odd-even li:nth-child(even){
+  background: skyblue;
+}
+
+li:not(:last-child){
+  border-bottom: 1px solid #000;
+}
+
+.pseudo:before {
+  content: "beforeのテキスト";
+}
+
+.pseudo::after {
+  content: "afuterのテキスト";
+}

@@ -1,0 +1,5 @@
+.box-shadow {
+  width: 100px; /* 横幅 */
+  height: 100px; /* 縦幅 */
+  box-shadow: 10px 10px 14px 10px rgba(78, 74, 74, 0.25); /* ボックスシャドウ */
+}

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* セクションのCSS */
+.main {
+    width: 1024px;
+    margin: 0 auto;
+    border: solid;
+}
+
+.section {
+    height: 100vh;
+    border-top: 1px solid #040000;
+}
+
+/* ボックスのCSS */
+.box {
+    width: 30rem;
+    height: 12.5rem;
+    background-color: #67c2ff;
+    color: white;
+    font-size: 5rem;
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+/* ページ読み込み直後にフェードイン要素を非表示にする */

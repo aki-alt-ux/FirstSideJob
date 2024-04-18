@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+* {
+    border: solid;
+}
+
+.header {
+    width: 30vw;
+}
+
+#cat1 {
+    border: 3px solid red;
+}
+
+.header-content-image {
+    width: 10vw;
+    display: block;
+    padding-bottom: 0;
+}

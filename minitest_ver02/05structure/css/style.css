@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    border: solid;
+}
+
+.main {
+    background-color: azure;
+}
+
+.main-outer {
+    background-color: rgb(247, 228, 153);
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.main-inner {
+    background-color: cornsilk;
+    width: 1024px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-item {
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+
+.main-item-info {
+    padding: 10px;
+}
+
+.main-item-image {
+    width: 200px;
+}
+
+.main-item-subtitle {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    border: solid;
+}
+
+.main {
+    width: 48rem;
+    margin: 0 auto;
+}
+
+.main-content {
+    width: 16rem;
+    height: 16rem;
+    margin: 0 auto;
+    background-color: lightgreen;
+    /* cssを追記 */
+}
+
+.main-image {
+    width: 12rem;
+    /* cssを追記 */
+}
+
+.main-button {
+    width: 16rem;
+    margin: 1rem auto;
+    background-color: green;
+    color: #fff;
+    font-size: 1.25rem;
+    /* cssを追記 */
+}

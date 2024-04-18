@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* ---------- fontsフォルダーのWebフォントを読込 ---------- */
+
+/* 源真ゴシック */
+
+/* 源真ゴシック（太字） */
+
+/* Philosopher */
+
+
+/* ---------- 共通設定 ---------- */
+
+html {
+    font-size: 10px;
+}
+
+.main div {
+    font-size: 4rem;
+    margin: 1rem;
+    border: solid 0.1rem gray;
+}
+
+
+/* ---------- 各要素にWebフォントを設定 ---------- */
+
+.genshin {
+    /* 源真ゴシック */
+}
+
+.genshin-bold {
+    /* 源真ゴシック（太字） */
+}
+
+.notosans {
+    /* Noto Sans JP */
+}
+
+.linewide {
+    /* 文字の行間を2に指定 */
+}
+
+.wide {
+    /* 文字の字間を2remに指定 */
+}

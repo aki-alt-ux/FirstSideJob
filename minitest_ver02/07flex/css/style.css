@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+* {
+    border: solid;
+}
+
+/* SP表示 */
+@media screen and (max-width: 767px) {
+}
+
+/* PC表示 */
+@media screen and (min-width: 768px) {
+}

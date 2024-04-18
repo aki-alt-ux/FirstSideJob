@@ -1,0 +1,16 @@
+table{
+  border: 2px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+}
+table th,
+table td{
+  border: 2px solid #ccc;
+  padding: 8px;
+}
+.separate{
+  border-collapse: separate;
+}
+.collapse{
+  border-collapse: collapse;
+}
