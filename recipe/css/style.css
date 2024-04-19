@@ -20,3 +20,78 @@ li {
 }
 /* 部品
 ------------------------------------------ */
+
+/* ヘッダー
+------------------------------------------ */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.75rem;
+  padding: 0.812rem 1.25rem 1.187rem;
+  background-color: rgb(238 156 112 / 80%);
+}
+
+/* ロゴ */
+.header-logo {
+  line-height: 1;
+}
+
+.header-logo img {
+  max-width: 16.8125rem;
+  vertical-align: baseline;
+}
+
+
+/* ハンバーガーボタン */
+.hamburger-button {
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-button-bar {
+  width: 1.5rem;
+  height: 0.125rem;
+  background-color: #fff;
+}
+
+.hamburger-button-bar:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.hamburger-button-title {
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+/* ハンバーガーメニュー
+------------------------------------------ */
+@media (max-width: 767.9px) {
+  .hamburger-menu {
+    position: fixed;
+    top: 3.75rem;
+    left: 100%;
+    width: 100%;
+    height: calc(100vh - 3.75rem);
+    padding: 2.45rem;
+    background-color: rgb(255 241 234 / 95%);
+    transition: all 0.6s;
+    visibility: hidden;
+  }
+}
+
+/* 開いている状態 */
+.hamburger-menu-active {
+  left: 0;
+  visibility: visible;
+}

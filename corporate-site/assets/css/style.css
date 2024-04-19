@@ -1,0 +1,133 @@
+@charset "UTF-8";
+/* ベースのスタイル
+------------------------------------------ */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  line-height: 1.75;
+  color: #000;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a,
+a:hover,
+a i {
+  transition: all 0.3s;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+ul {
+  list-style: none;
+}
+/* 部品
+------------------------------------------ */
+/* flexbox */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Outfitフォント */
+.outfit {
+  font-family: Outfit, sans-serif;
+}
+
+/* ヘッダー
+------------------------------------------ */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  box-shadow: 0 0 .625rem 0 rgb(0 0 0 / 20%);
+}
+/* ロゴ */
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #554b9c;
+  line-height: 0;
+}
+/* ハンバーガーボタン */
+.hamburger-button {
+  width: 4.75rem;
+  height: 5rem;
+  font-size: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburger-button i {
+  line-height: 0;
+}
+
+/* ハンバーガーメニュー、ヘッダーナビ
+------------------------------------------ */
+@media (max-width: 767px) {
+  .hamburger-menu {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 5rem);
+    background-color: #fff;
+    transition: all 0.6s;
+    transform: translateX(100%);
+  }
+}
+/* アクティブ状態 */
+.hamburger-menu-active {
+  transform: translateX(0);
+}
+/* ナビゲーション */
+@media (max-width: 767px) {
+  .hamburger-menu-list-group {
+    display: table;
+    width: 100vw;
+    font-size: 1.875rem;
+    border-top: 0.0625rem solid #000;
+  }
+}
+@media (max-width: 767px) {
+  .hamburger-menu-list-group a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.72rem 2rem;
+    line-height: 1;
+    border-bottom: 0.0625rem solid #000;
+  }
+  .hamburger-menu-list-group li:nth-child(4) a,
+  .hamburger-menu-list-group li:nth-child(5) a {
+    padding: 1.5rem 2rem 1.95rem;
+  }
+  .hamburger-menu-list-group li:nth-child(4) a::after,
+  .hamburger-menu-list-group li:nth-child(5) a::after {
+    padding-top: .25rem;
+  }
+}
+/* 右矢印アイコン */
+@media (max-width: 767px) {
+  .hamburger-menu-list-group a::after {
+    font-family: bootstrap-icons;
+    font-size: 1.5rem;
+    content: "\F285";
+  }
+}

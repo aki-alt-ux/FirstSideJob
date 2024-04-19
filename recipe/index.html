@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kirameki Kitchen</title>
-    <meta name="description" content="Kirameki Kitchen（キラメキ！キッチン）は、食専門のWebメディアです。人気の料理研究家のとっておきのレシピや旬の食情報、レシピを毎日お届けしています。時短・簡単レシピ、お弁当メニュー、作り置きおかず、おもてなし料理まであなたの毎日を素敵に彩るおいしいレシピがきっと見つかります！">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kirameki Kitchen</title>
+  <meta name="description" content="Kirameki Kitchen（キラメキ!キッチン）は、食専門のWebメディアです。人気の料理研究家のとっておきのレシピや旬の食情報、レシピを毎日お届けしています。時短・簡単レシピ、お弁当メニュー、作り置きおかず、おもてなし料理まであなたの毎日を素敵に彩るおいしいレシピがきっと見つかります！">
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- Slick -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-  </head>
+<body>
 
-  <body>
+   <!-- ヘッダー -->
+   <header class="header">
+    <h1 class="header-logo">
+      <a href="#"><img src="images/header/header_logo.svg" alt="Kirameki Kitchen"></a>
+    </h1>
 
-    <!-- ヘッダー -->
-  <header class="header">
+    <!-- ハンバーガーボタン -->
+    <button type="button" class="hamburger-button">
+      <span class="hamburger-button-bar"></span>
+      <span class="hamburger-button-bar"></span>
+      <span class="hamburger-button-title">メニュー</span>
+    </button>
+
+    <!-- ハンバーガーメニュー -->
+  <div class="hamburger-menu header-nav-container">
+    <nav class="hamburger-nav-first">
+      <ul class="hamburger-nav-first-list-group">
+        <li><a href="#">レシピ</a></li>
+        <li><a href="#">特集</a></li>
+        <li><a href="#">ランキング</a></li>
+      </ul>
+    </nav>
+    <nav class="hamburger-nav-second">
+      <ul class="hamburger-nav-second-list-group">
+        <li><a href="#"><i class="hamburger-nav-second-list-group-icon bi bi-search"></i><span class="hamburger-nav-second-list-group-text">検索</span></a></li>
+        <li><a href="#"><i class="hamburger-nav-second-list-group-icon bi bi-box-arrow-right"></i><span class="hamburger-nav-second-list-group-text">ログイン</span></a></li>
+      </ul>
+    </nav>
+    <nav class="hamburger-nav-third">
+      <ul>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+      </ul>
+    </nav>
+    <ul class="hamburger-sns">
+      <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+      <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+      <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+    </ul>
+  </div>
   </header>
 
   <!-- メイン -->
@@ -56,13 +95,10 @@
   <!-- フッター -->
   <footer class="footer">
   </footer>
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Slick -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./js/main.js"></script>
-
-  </body>
-
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
 </html>
