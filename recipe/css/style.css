@@ -18,8 +18,39 @@ img {
 li {
   list-style: none;
 }
+
 /* 部品
 ------------------------------------------ */
+/* ボタンの共通スタイル */
+.button {
+  display: block;
+  max-width: 7.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.6rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .button {
+    max-width: 10rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* 白色ボタン */
+.button-white-ghost {
+  color: #fff;
+  border: 0.0625rem solid #fff;
+}
+
+.button-white-ghost:hover {
+  background-color: rgb(255 255 255 / 30%);
+}
 
 /* ヘッダー
 ------------------------------------------ */
@@ -35,6 +66,17 @@ li {
   height: 3.75rem;
   padding: 0.812rem 1.25rem 1.187rem;
   background-color: rgb(238 156 112 / 80%);
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 0.937rem;
+    padding-bottom: 1.062rem;
+  }
+
+  .header a {
+    color: #fff;
+  }
 }
 
 /* ロゴ */
@@ -57,6 +99,12 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
 }
 
 .hamburger-button-bar {
@@ -94,4 +142,297 @@ li {
 .hamburger-menu-active {
   left: 0;
   visibility: visible;
+}
+
+/* ナビゲーション
+------------------------------------------ */
+/* レシピ、特集、ランキング */
+.hamburger-nav-first-list-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .hamburger-nav-first-list-group {
+    flex-direction: row;
+    column-gap: 2.5rem;
+    margin-bottom: 0;
+    margin-left: 3.45rem;
+    font-size: 1rem;
+  }
+}
+
+/* 検索、ログイン */
+.hamburger-nav-second {
+  padding-bottom: 2.8rem;
+  margin-bottom: 2.35rem;
+  border-bottom: 0.0625rem solid #999;
+}
+
+@media (min-width: 768px) {
+  .hamburger-nav-second {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: initial;
+  }
+}
+
+.hamburger-nav-second-list-group {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hamburger-nav-second-list-group {
+    column-gap: 2.75rem;
+    padding-right: 1.25rem;
+  }
+}
+
+.hamburger-nav-second-list-group-icon {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hamburger-nav-second-list-group-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+}
+
+.hamburger-nav-second-list-group-text {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .hamburger-nav-second-list-group-text {
+    font-size: 0.75rem;
+  }
+}
+
+/* 会社概要、お問い合わせ、利用規約、プライバシーポリシー */
+.hamburger-nav-third {
+  margin-bottom: 1.55rem;
+  line-height: 1;
+}
+
+.hamburger-nav-third li {
+  margin-bottom: 1.25rem;
+}
+
+/* SNSリンク */
+.hamburger-sns {
+  display: flex;
+  column-gap: 2.58rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-sns a {
+  font-size: 2rem;
+  color: #999;
+}
+
+/* PC表示のとき、ヘッダーナビ（会社概要、お問い合わせ、利用規約、プライバシーポリシー）、SNSリンクを非表示に */
+@media (min-width: 768px) {
+  .hamburger-nav-third,
+  .hamburger-sns {
+    display: none;
+  }
+}
+
+/* ヘッダーナビコンテナ */
+@media (min-width: 768px) {
+  .header-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+/* カバー
+------------------------------------------ */
+.cover {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .cover-slick-item img {
+    width: 100%;
+  }
+}
+
+/* ピックアップ */
+.cover-pickup {
+  position: absolute;
+  bottom: 3.7rem;
+  left: 2.5rem;
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 889.9px) {
+  .cover-pickup {
+    bottom: 2.5rem;
+    left: 5rem;
+  }
+}
+
+@media (min-width: 890px) {
+  .cover-pickup {
+    bottom: 5rem;
+    left: 5rem;
+  }
+}
+
+.cover-pickup-image {
+  max-width: 6.875rem;
+}
+
+@media (min-width: 768px) {
+  .cover-pickup-image {
+    max-width: 8.5625rem;
+  }
+}
+.cover-catch {
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .cover-catch {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.cover-category,
+.cover-date {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .cover-category,
+  .cover-date {
+    font-size: 1rem;
+  }
+}
+
+.cover-category {
+  margin-right: 1.1rem;
+}
+
+.cover-date {
+  display: inline-block;
+  margin-bottom: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .cover-date {
+    margin-bottom: 0.95rem;
+  }
+}
+
+/* Slick矢印 */
+.slick-arrow {
+  position: absolute;
+  top: calc((100% - 60px) / 2);
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .slick-arrow {
+    top: calc((100% - 24px) / 2);
+  }
+}
+
+.prev-arrow {
+  left: 1.25rem;
+}
+
+.next-arrow {
+  right: 1.25rem;
+}
+
+/* Slickドット */
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots {
+  bottom: 1.25rem;
+  display: flex;
+  column-gap: 1.25rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .slick-dots {
+    bottom: 2rem;
+  }
+}
+
+.slick-dots li {
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: 0;
+}
+
+.slick-dots li button {
+  width: 0.625rem;
+  height: 0.625rem;
+  padding: 0;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
+}
+
+.slick-dots li button::before {
+  width: 0.625rem;
+  height: 0.625rem;
+  line-height: normal;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.slick-dots li button:hover::before,
+.slick-dots li.slick-active button::before {
+  color: #fff;
+  background-color: #fff;
+  opacity: 1;
+}
+
+/* スクロール */
+.cover-scroll {
+  position: absolute;
+  right: 1.25rem;
+  bottom: -2.8rem;
+}
+
+@media (min-width: 768px) {
+  .cover-scroll {
+    right: 2rem;
+    bottom: -3.3rem;
+  }
+}
+
+.cover-scroll-image {
+  max-height: 8rem;
+}
+
+@media (min-width: 768px) {
+  .cover-scroll-image {
+    max-height: 10rem;
+  }
 }
