@@ -99,6 +99,16 @@ li {
   margin-left: 1.35rem;
 }
 
+/* ピンク色ボタン */
+.button-pink-ghost {
+  color: #ee9c70;
+  border: 0.0625rem solid #ee9c70;
+}
+
+.button-pink-ghost:hover {
+  background-color: rgb(238 156 112 / 30%);
+}
+
 /* ヘッダー
 ------------------------------------------ */
 .header {
