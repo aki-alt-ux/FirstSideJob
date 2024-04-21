@@ -545,3 +545,8 @@ li {
 .new-recipe-item-date {
   color: #999;
 }
+
+/* ピンク色ボタン */
+.new .button-pink-ghost {
+  margin: auto;
+}
