@@ -60,10 +60,23 @@ li {
   margin-left: auto;
 }
 
+@media (min-width: 768px) {
+  .container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 /* タイトル */
 .section-title {
   margin-bottom: 2.65rem;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    margin-bottom: 2.5rem;
+  }
 }
 
 /* 英語表記 */
@@ -82,6 +95,12 @@ li {
   white-space: nowrap;
 }
 
+@media (min-width: 768px) {
+  .section-title-jp {
+    font-size: 2rem;
+  }
+}
+
 .section-title-jp::before,
 .section-title-jp::after {
   width: 2.5rem;
@@ -97,6 +116,20 @@ li {
 
 .section-title-jp::after {
   margin-left: 1.35rem;
+}
+
+@media (min-width: 768px) {
+  .section-title-jp::before,
+  .section-title-jp::after {
+    border-top: solid 0.125rem #999;
+    margin-top: 0.75rem;
+  }
+  .section-title-jp::before {
+    margin-right: 1.25rem;
+  }
+  .section-title-jp::after{
+    margin-left: 1.25rem;
+  }
 }
 
 /* ピンク色ボタン */
@@ -500,6 +533,18 @@ li {
   max-width: 4rem;
 }
 
+@media (min-width: 768px) {
+  .new .section-title-en {
+    max-width: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .new .section-title{
+    margin-bottom: 2.75rem;
+  }
+}
+
 /* レシピ */
 .new-recipe {
   display: flex;
@@ -509,8 +554,24 @@ li {
   margin-bottom: 2.4rem;
 }
 
+@media (min-width: 768px) {
+  .new-recipe {
+    flex-wrap: nowrap;
+    column-gap: 2.5rem;
+    margin-left: 0.65rem;
+    margin-right: 0.65rem;
+    margin-bottom: 2.35rem;
+  }
+}
+
 .new-recipe-item {
   width: calc(50% - 0.625rem);
+}
+
+@media (min-width: 768px) {
+  .new-recipe-item {
+    width: calc(25% - 1.25rem);
+  }
 }
 
 /* レシピ画像 */
@@ -519,12 +580,24 @@ li {
   margin-bottom: 0.75rem;
 }
 
+@media (min-width: 768px) {
+  .new-recipe-item-image{
+    margin-bottom: 0.6rem;
+  }
+}
+
 /* レシピタイトル */
 .new-recipe-item-title {
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .new-recipe-item-title {
+    font-size: 1rem;
+  }
 }
 
 /* レシピカテゴリ、日付 */
@@ -549,4 +622,141 @@ li {
 /* ピンク色ボタン */
 .new .button-pink-ghost {
   margin: auto;
+}
+
+/* 特徴
+------------------------------------------ */
+.feature {
+  color: #fff;
+  background-image: url("../images/feature/feature_bg_sp.jpg");
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .feature {
+    background-image: url("../images/feature/feature_bg_pc.jpg");
+    background-position: left top;
+  }
+}
+
+.feature .container{
+  padding: 3.75rem 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .feature .container {
+    display: flex;
+    column-gap: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5.5rem;
+  }
+}
+
+/* 画像エリア、テキストエリア */
+@media (min-width: 768px) {
+  .feature-thumbnail,
+  .feature-body {
+    width: calc((100% - 2.5rem) /2);
+  }
+}
+
+/* 画像エリア */
+.feature-thumbnail {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .feature-thumbnail {
+    margin-bottom: 0;
+  }
+}
+
+/* Featureタイトル */
+.feature-thumbnail-title {
+  position: relative;
+}
+
+.feature-thumbnail-title-image {
+  position: absolute;
+  top: -1.5rem;
+  left: -0.75rem;
+  max-width: 10.9375rem;
+}
+
+@media (min-width: 768px) {
+  .feature-thumbnail-title-image {
+    top: -1.6rem;
+    max-width: 13.6875rem;
+  }
+}
+
+/* メイン画像 */
+.feature-thumbnail-image {
+  width: 100%;
+  height: 16.375rem;
+  object-fit: cover;
+  box-shadow: 0.5rem 0.5rem 0 0 #f4d4c3;
+}
+
+@media (min-width: 768px) {
+  .feature-thumbnail-image {
+    height: 23.9375rem;
+    object-fit: initial;
+    box-shadow: 1rem 1rem 0 0 #f4d4c3;
+  }
+}
+
+/* タイトル */
+.feature-body-title {
+  margin-bottom: 0.85rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .feature-body-title {
+    margin-bottom: 0.7rem;
+    font-size: 1.75rem;
+    line-height: 1.75;
+  }
+}
+
+/* テキスト */
+.feature-body p {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .feature-body p {
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+  }
+}
+
+/* ポイント */
+.feature-body-point {
+  margin-bottom: 0.65rem;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+}
+
+@media (min-width: 768px) {
+  .feature-body-point {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* 白色ボタン */
+.feature .button-white-ghost {
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .feature .button-white-ghost {
+    margin-top: 1.25rem;
+    margin-left: 0;
+  }
 }
