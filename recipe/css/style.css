@@ -760,3 +760,298 @@ li {
     margin-left: 0;
   }
 }
+
+/* ランキング
+------------------------------------------ */
+.ranking {
+  background-color: #fff7f2;
+}
+
+.ranking .container {
+  padding: 3.25rem 1.25rem 3.75rem;
+}
+
+@media (min-width: 768px) {
+  .ranking .container {
+    padding: 5rem 0;
+  }
+}
+
+.ranking .section-title {
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .ranking .section-title {
+    margin-bottom: 2.7rem;
+  }
+}
+
+/* タイトル英語表記 */
+.ranking .section-title-en {
+  margin-bottom: 0.25rem;
+  max-width: 7rem;
+}
+
+@media (min-width: 768px) {
+  .ranking .section-title-en {
+    max-width: 8.75rem;
+  }
+}
+
+/* ランキングリスト */
+.ranking-list-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  max-width: 43.125rem;
+  margin: auto;
+}
+
+/* アイテム */
+.ranking-list-group-item {
+  display: flex;
+  column-gap: 1rem;
+}
+
+/* ランキング画像 */
+.ranking-thumbnail {
+  position: relative;
+  width: 100%;
+  max-width: 7.5rem;
+}
+
+/* ランキングバッジ */
+.ranking-thumbnail-badge {
+  position: absolute;
+  top: -1rem;
+  left: -0.875rem;
+  max-width: 1.8125rem;
+}
+
+@media (min-width: 768px) {
+  .ranking-thumbnail-badge {
+    top: -1.2rem;
+    left: -1.1rem;
+    max-width: 2.3125rem;
+  }
+}
+
+/* ランキングボディ */
+.ranking-body {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .ranking-body {
+    padding-top: 0.5rem;
+  }
+}
+
+/* ランキングタイトル */
+.ranking-body-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .ranking-body-title {
+    margin-top: 0;
+    margin-bottom: 0.55rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* ランキングインナー */
+.ranking-body-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .ranking-body-inner {
+    line-height: 1;
+    justify-content: flex-start;
+  }
+}
+
+/* ランキングカテゴリー、日付 */
+.ranking-body-category,
+.ranking-body-date {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .ranking-body-category,
+  .ranking-body-date {
+    font-size: 1rem;
+  }
+}
+
+/* ランキングカテゴリー */
+.ranking-body-category {
+  margin-right: 1.25rem;
+  color: #ee9c70;
+}
+
+/* ランキング日付 */
+.ranking-body-date {
+  color: #999;
+}
+
+/* レシピ検索
+------------------------------------------ */
+@media (min-width: 768px) {
+  .search .container {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 3rem;
+    align-items: flex-start;
+  }
+}
+
+/* タイトル */
+.search-title {
+  text-align: center;
+  margin-bottom: 2.15rem;
+}
+
+@media (min-width: 768px) {
+  .search-title {
+    min-width: 19rem;
+    margin-bottom: 0;
+  }
+}
+
+.search .section-title {
+  margin-bottom: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .search .section-title {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.search .section-title-en{
+  max-width: 5.5rem;
+}
+
+@media (min-width: 768px) {
+  .search .section-title-en{
+    max-width: 6.625rem;
+  }
+}
+
+/* もっと見る */
+.search-more {
+  font-size: 0.875rem;
+  color: #ee9c70;
+}
+
+@media (min-width: 768px) {
+  .search-more {
+    font-size: 1rem;
+  }
+}
+
+/* カテゴリー */
+.search-category {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.05rem;
+  column-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .search-category {
+    margin-top: 0.65rem;
+    row-gap: 0.95rem;
+    column-gap: 0.85rem;
+  }
+}
+
+/* ピンク色ボタン */
+.search .button-pink-ghost {
+  max-width: none;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .search .button-pink-ghost {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    font-size: 1rem;
+  }
+}
+
+/* フッター
+------------------------------------- */
+
+.footer {
+  background-color: #E7E7E7;
+  position: relative;
+}
+
+.footer-nav-list-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav-list-group-first {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+  padding-right: 2.5rem;
+}
+
+.footer-nav-list-group-second {
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+}
+
+.footer-sns-list-group {
+  display: flex;
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.footer-sns-list-item a {
+  padding: 2.5rem;
+  color: #999999;
+  font-size: 2rem;
+}
+
+.footer-copyright {
+  padding-top: 2.5rem;
+  text-size: 00.75rem;
+}
+
+.button-to-top {
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #999999;
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1000;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+}
+
