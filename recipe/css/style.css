@@ -52,6 +52,16 @@ li {
   background-color: rgb(255 255 255 / 30%);
 }
 
+/* ピンク色ボタン */
+.button-pink-ghost {
+  color: #ee9c70;
+  border: 0.0625rem solid #ee9c70;
+}
+
+.button-pink-ghost:hover {
+  background-color: rgb(238 156 112 / 30%);
+}
+
 /* コンテナ */
 .container {
   max-width: 68.75rem;
@@ -130,16 +140,6 @@ li {
   .section-title-jp::after{
     margin-left: 1.25rem;
   }
-}
-
-/* ピンク色ボタン */
-.button-pink-ghost {
-  color: #ee9c70;
-  border: 0.0625rem solid #ee9c70;
-}
-
-.button-pink-ghost:hover {
-  background-color: rgb(238 156 112 / 30%);
 }
 
 /* ヘッダー
@@ -991,49 +991,69 @@ li {
 
 /* フッター
 ------------------------------------- */
-
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1;
   background-color: #E7E7E7;
+  max-width: 100%;
   position: relative;
+}
+
+.footer-logo {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  font-size: 0.875rem;
 }
 
 .footer-nav-list-group {
   display: flex;
   flex-wrap: wrap;
+  line-height: 1;
+  padding-bottom: 0.5rem;
+  gap: 0 2.5rem;
 }
 
-.footer-nav-list-group-first {
-  padding-top: 2.5rem;
-  padding-bottom: 1.5rem;
-  padding-right: 2.5rem;
+.footer-nav-list-group li {
+  margin-top: 1rem;
 }
 
-.footer-nav-list-group-second {
-  padding-right: 2.5rem;
-  padding-top: 1rem;
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-sns-list-group {
   display: flex;
-  margin-top: 2.75rem;
-  margin-bottom: 2.75rem;
+  line-height: 1;
+  column-gap:2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  justify-content: center;
 }
 
 .footer-sns-list-item a {
-  padding: 2.5rem;
   color: #999999;
   font-size: 2rem;
 }
 
 .footer-copyright {
-  padding-top: 2.5rem;
-  text-size: 00.75rem;
+  line-height: 1;
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 .button-to-top {
-  font-size: 2rem;
+  position: absolute;
+  line-height: 1;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  font-size: 3rem;
   color: #ffffff;
-  background-color: #999999;
+  background-color: #bbbbbb;
   border-radius: 50%;
   width: 2.75rem;
   height: 2.75rem;
@@ -1041,17 +1061,36 @@ li {
   justify-content: center;
   align-items: center;
   border: none;
-  cursor: pointer;
   text-decoration: none;
-  z-index: 1000;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
 }
 
 @media (min-width: 768px) {
-  .container {
+  .footer .container{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+  }
+
+  .footer-nav {
+    font-size: 1rem;
+  }
+
+  .footer-bottom {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-sns-list-group {
+    display: flex;
+    line-height: 1;
+    column-gap:2.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    justify-content: flex-end;
+  }
+
+  .footer-copyright {
+    margin-bottom: 0.8rem;
   }
 }
-

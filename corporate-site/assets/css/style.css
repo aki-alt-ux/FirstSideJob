@@ -55,6 +55,15 @@ ul {
   background-color: #fff;
   box-shadow: 0 0 .625rem 0 rgb(0 0 0 / 20%);
 }
+
+@media (min-width: 768px) {
+  .header {
+    top: 1.25rem;
+    max-width: 67.5rem;
+    margin: auto;
+  }
+}
+
 /* ロゴ */
 .header-logo {
   display: flex;
@@ -74,6 +83,13 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
+}
+
 .hamburger-button i {
   line-height: 0;
 }
