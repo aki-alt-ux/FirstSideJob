@@ -321,6 +321,24 @@ ul {
   }
 }
 
+/* カバー画像2 */
+.access {
+  height: 20.625rem;
+  background-color: #e7e9fb;
+  background-image: url("../images/access/cover.png");
+  background-position: center;
+  background-size: 85%;
+}
+@media (min-width: 768px) {
+  .access {
+    width: 50%;
+    height: 100vh;
+    background-image: url("../images/access/cover.png");
+    background-position: left center;
+    background-size: unset;
+  }
+}
+
 /* カバーテキスト */
 @media (min-width: 768px) {
   .cover-bottom {
