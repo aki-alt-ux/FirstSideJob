@@ -302,26 +302,33 @@ ul {
   }
 }
 
-/* カバー画像 */
-.cover-top {
+/* accessカバー背景画像 */
+.access-cover {
   height: 20.625rem;
-  background-color: #e7e9fb;
-  background-image: url("../images/cover/cover_bg_sp.png");
+  background-image: url("../images/access/cover.png");
   background-position: center;
   background-size: 85%;
 }
-
 @media (min-width: 768px) {
-  .cover-top {
+  .access-cover {
     width: 50%;
     height: 100vh;
-    background-image: url("../images/cover/cover_bg_pc.png");
+    background-image: url("../images/access/cover.png");
     background-position: left center;
     background-size: unset;
   }
 }
 
 /* カバーテキスト */
+.cover-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
 @media (min-width: 768px) {
   .cover-bottom {
     position: relative;
@@ -334,82 +341,26 @@ ul {
 
 /* カバーキャッチコピー */
 .cover-catch {
+  display: flex;
+
   margin: 3rem 1.25rem 2.7rem;
+
 }
 
 @media (min-width: 768px) {
   .cover-catch {
     width: 33.75rem;
     margin: .4rem 0 0 auto;
+
   }
 }
 
-/* カバータイトル */
-.cover-title {
-  display: table;
-  margin-bottom: 1.25rem;
-  font-size: 2.5625rem;
-  color: #fff;
-  line-height: 1;
-  background-color: #ec6a00;
-}
+.outfit {
+  font-family: Outfit;
 
-@media (min-width: 768px) {
-  .cover-title {
-    font-size: 3.15rem;
-    margin-bottom: 0;
+  border-bottom: 3px solid #554b9c;
   }
-  .cover-title:nth-child(1) {
-    margin-bottom: 1.875rem;
-  }
-}
 
-/* カバー説明 */
-.cover-description {
-  display: block;
-  margin-top: 0.85rem;
-  font-size: 1rem;
-  line-height: 2;
-}
-
-@media (min-width: 768px) {
-  .cover-description {
-    margin-top: 2rem;
-    font-size: 1.1875rem;
-  }
-}
-
-/* スクロール */
-.cover-scroll {
-  display: none;
-}
-@media (min-width: 768px) {
-  .cover-scroll {
-    position: absolute;
-    bottom: 2.8rem;
-    left: 0;
-    display: block;
-    font-size: .8125rem;
-    letter-spacing: .1rem;
-    transform: rotate(-90deg);
-    height: 1.2rem;
-  }
-}
-@media (min-width: 1081px) {
-  .cover-scroll {
-    right: 28rem;
-    left: auto;
-  }
-}
-.cover-scroll::after {
-  background-color: #554b9c;
-  position: absolute;
-  right: .25rem;
-  bottom: 1.75rem;
-  width: 5rem;
-  height: .125rem;
-  content: "";
-}
 
 /* about
 ------------------------------------------ */

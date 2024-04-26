@@ -302,32 +302,41 @@ ul {
   }
 }
 
-/* カバー画像 */
-.cover-top {
+
+
+/* accessカバー背景画像 */
+.access-cover {
   height: 20.625rem;
-  background-color: #e7e9fb;
-  background-image: url("../images/cover/cover_bg_sp.png");
+  background-image: url("../images/access/cover.png");
   background-position: center;
   background-size: 85%;
 }
-
 @media (min-width: 768px) {
-  .cover-top {
+  .access-cover {
     width: 50%;
     height: 100vh;
-    background-image: url("../images/cover/cover_bg_pc.png");
+    background-image: url("../images/access/cover.png");
     background-position: left center;
     background-size: unset;
   }
 }
 
 /* カバーテキスト */
+.cover-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+
 @media (min-width: 768px) {
   .cover-bottom {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 50%;
   }
 }
@@ -335,48 +344,33 @@ ul {
 /* カバーキャッチコピー */
 .cover-catch {
   margin: 3rem 1.25rem 2.7rem;
+  width: auto;
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
   .cover-catch {
-    width: 33.75rem;
-    margin: .4rem 0 0 auto;
+    width: auto;
+
   }
 }
 
-/* カバータイトル */
-.cover-title {
-  display: table;
-  margin-bottom: 1.25rem;
-  font-size: 2.5625rem;
-  color: #fff;
-  line-height: 1;
-  background-color: #ec6a00;
+.outfit {
+  font-family: Outfit;
+  font-size: 2.56rem;
+
 }
 
 @media (min-width: 768px) {
-  .cover-title {
-    font-size: 3.15rem;
-    margin-bottom: 0;
-  }
-  .cover-title:nth-child(1) {
-    margin-bottom: 1.875rem;
+  .outfit {
+    font-family: Outfit;
+    font-size: 3.18rem;
   }
 }
 
-/* カバー説明 */
-.cover-description {
-  display: block;
-  margin-top: 0.85rem;
-  font-size: 1rem;
-  line-height: 2;
-}
-
-@media (min-width: 768px) {
-  .cover-description {
-    margin-top: 2rem;
-    font-size: 1.1875rem;
-  }
+.outfit-hr {
+  border-color: #554b9c;
+  border-width: 0.1875rem;
 }
 
 /* スクロール */
