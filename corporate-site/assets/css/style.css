@@ -286,8 +286,9 @@ ul {
 
 @media (min-width: 768px) {
   .cover {
-    margin-top: 0;
-  }
+    height: 67.5rem;
+    margin-top: 0rem;
+    }
 }
 
 /* コンテナ */
@@ -299,6 +300,7 @@ ul {
 @media (min-width: 768px) {
   .cover-container {
     flex-direction: row-reverse;
+    margin-top: 0rem;
   }
 }
 
@@ -308,13 +310,13 @@ ul {
   background-color: #e7e9fb;
   background-image: url("../images/cover/cover_bg_sp.png");
   background-position: center;
-  background-size: 85%;
+  background-size: 96%;
 }
 
 @media (min-width: 768px) {
   .cover-top {
     width: 50%;
-    height: 100vh;
+    height: 1080px;
     background-image: url("../images/cover/cover_bg_pc.png");
     background-position: left center;
     background-size: unset;
@@ -340,14 +342,16 @@ ul {
 @media (min-width: 768px) {
   .cover-catch {
     width: 33.75rem;
-    margin: .4rem 0 0 auto;
+    margin: 0 0 0 auto;
+    position: relative;
+    top: -0.3rem;
   }
 }
 
 /* カバータイトル */
 .cover-title {
   display: table;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.6rem;
   font-size: 2.5625rem;
   color: #fff;
   line-height: 1;
@@ -357,10 +361,11 @@ ul {
 @media (min-width: 768px) {
   .cover-title {
     font-size: 3.15rem;
-    margin-bottom: 0;
+    margin-top: 1rem;
+
   }
   .cover-title:nth-child(1) {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.0rem;
   }
 }
 
@@ -397,8 +402,9 @@ ul {
 }
 @media (min-width: 1081px) {
   .cover-scroll {
-    right: 28rem;
+    right: 31rem;
     left: auto;
+    bottom: 4rem;
   }
 }
 .cover-scroll::after {
@@ -409,6 +415,18 @@ ul {
   width: 5rem;
   height: .125rem;
   content: "";
+}
+
+@media (min-width: 1081px) {
+  .cover-scroll::after {
+    background-color: #554b9c;
+    position: absolute;
+    right: .25rem;
+    bottom: 1.2rem;
+    width: 6.2rem;
+    height: .125rem;
+    content: "";
+  }
 }
 
 /* about
@@ -570,7 +588,7 @@ ul {
 
 @media (min-width: 768px) {
   .business-list-image {
-    width: 6.5rem;
+    width: 8.8rem;
     height: 6.5625rem;
   }
 }
@@ -588,7 +606,7 @@ ul {
 
 @media (min-width: 768px) {
   .business-list-title {
-    font-size: 1.25rem;
+    font-size: 1.5625rem;
   }
 }
 /* brタグ */
@@ -736,7 +754,7 @@ ul {
   border-top: .0625rem solid #000;
 }
 .news-list li {
-  padding: 1.21rem .75rem 1rem;
+  padding: 1.28rem .75rem 0.55rem;
   border-bottom: .0625rem solid #000;
 }
 @media (min-width: 1081px) {
@@ -748,6 +766,7 @@ ul {
 .news-badge {
   display: inline-block;
   width: 6.25rem;
+  margin-left: 2.72rem;
   padding: .35rem 0 .5rem;
   color: #fff;
   line-height: 1;
@@ -758,6 +777,7 @@ ul {
 @media (min-width: 768px) {
   .news-badge {
     width: 6.875rem;
+    margin-left: -0.1rem;
   }
 }
 /* 日付 */
@@ -779,13 +799,16 @@ ul {
 /* テキスト */
 .news-text {
   display: block;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
 }
 @media (min-width: 1081px) {
   .news-text {
     display: inline-block;
     margin-top: 0;
-    margin-left: 1rem;
+    margin-left: 2.6rem;
+  }
+  .news-list li:last-child .news-text  {
+    padding-left: 0.8rem; /* 4個目のテキストの下に2remのスペースを入れる */
   }
 }
 

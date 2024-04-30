@@ -281,13 +281,15 @@ ul {
 /* カバー
 ------------------------------------------ */
 .cover {
-  margin-top: 5rem;
+  height: 26.8em;
+  margin-top: 5.2rem;
 }
 
 @media (min-width: 768px) {
   .cover {
+    height: 60em;
     margin-top: 0;
-  }
+    }
 }
 
 /* コンテナ */
@@ -298,8 +300,9 @@ ul {
 
 @media (min-width: 768px) {
   .cover-container {
+    display: flex;
     flex-direction: row-reverse;
-  }
+    }
 }
 
 /* accessカバー背景画像 */
@@ -307,15 +310,16 @@ ul {
   height: 20.625rem;
   background-image: url("../images/access/cover.png");
   background-position: center;
-  background-size: 85%;
+  background-size: 95%;
 }
 @media (min-width: 768px) {
   .access-cover {
     width: 50%;
     height: 100vh;
     background-image: url("../images/access/cover.png");
-    background-position: left center;
-    background-size: unset;
+    background-size: 90%;
+    position: relative;
+    right: 50px;
   }
 }
 
@@ -331,60 +335,79 @@ ul {
 
 @media (min-width: 768px) {
   .cover-bottom {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 50%;
+    height: 100vh;
   }
 }
 
 /* カバーキャッチコピー */
 .cover-catch {
   display: flex;
-
-  margin: 3rem 1.25rem 2.7rem;
-
+  justify-content: center;
+  margin: 0.45rem 1.25rem 2.7rem;
 }
 
 @media (min-width: 768px) {
   .cover-catch {
-    width: 33.75rem;
-    margin: .4rem 0 0 auto;
-
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 0;
+    letter-spacing: 0.5px;
   }
 }
 
-.outfit {
+.outfit-access {
+  line-height: 1;
   font-family: Outfit;
+  font-size: 2.6rem;
+  border-bottom: #554b9c solid 0.3rem;
+  padding-bottom: 0.3rem;
+}
 
-  border-bottom: 3px solid #554b9c;
+@media (min-width: 768px) {
+  .outfit-access {
+    line-height: 1;
+    font-family: Outfit;
+    font-size: 3.1rem;
+    border-bottom: #554b9c solid 0.2rem;
+    padding-bottom: 0.8rem;
   }
+}
+
+
 
 
 /* info-map
 ------------------------------------------ */
 .info-map {
-  height: 35rem;
-  padding: 6.25rem 0;
+  height: 40.5rem;
+  padding: 0;
   background-size: cover;
-  margin-bottom: 20rem;
+
 }
 
 @media (min-width: 768px) {
   .info-map {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    height: 45rem;
+    margin-top: 0rem;
+    margin-bottom: 0.8rem;
     background-position: center center;
   }
 }
 
 .map {
   width: 100%; /* コンテナの幅を画面の80%に設定 */
-  height: 500px; /* コンテナの高さを指定 */
+  height: 25rem; /* コンテナの高さを指定 */
   border: none;
   padding: 0;
-  margin: 20px 0 20px 0;
+  margin: 0 0 10px 0;
+}
+
+@media (min-width: 768px) {
+  .map {
+    height: 25rem;
+    margin-bottom: 3.5rem;
+  }
 }
 
 iframe {
@@ -395,26 +418,135 @@ iframe {
 
 .adress {
   display: flex;
-  justify-content: start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: #f2f2f2;
   height: 8.875rem;
   margin: 1.75rem 1.25rem 0;
+  padding-left: 1.56rem;
   border-radius: 1.875rem;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 @media (min-width: 768px) {
   .adress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2;
-    height: 8.875rem;
-    margin: 1.75rem 1.25rem 0;
-    border-radius: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  height: 11rem;
+  margin-top: 1.75rem;
+  width: 51%;  /* 幅を指定 */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3.5rem;
+  border-radius: 1.875rem;
+  font-size: 1.25rem;
+  font-family: "Noto Sans JP", sans-serif;
   }
 }
 
+.place-name {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 1px;
+  right: 0.2px;
+}
+@media (min-width: 768px) {
+  .place-name {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+.bi-geo-alt {
+  line-height: 1;
+  padding: 0.5rem 0 1rem;
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 3px;
+}
+
+@media (min-width: 768px) {
+  .bi-geo-alt {
+    line-height: 1;
+    padding: 1.4rem 0 0 0;
+    font-size: 1.7rem;
+    position: relative;
+    bottom: 10px;
+  }
+}
+
+.adress-detail {
+  margin-left: 0.2rem;
+  line-height: 1.56;
+}
+
+@media (min-width: 768px) {
+  .adress-detail {
+    margin-top: 1.4rem;
+    margin-left: 0.8rem;
+    line-height: 1.56;
+    position: relative;
+    right: 1px;
+    bottom:8px;
+  }
+}
+
+.adress-nam {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 5px;
+}
+
+@media (min-width: 768px) {
+  .adress-nam {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.bi-telephone {
+  line-height: 1;
+  margin: 1rem 0 1rem;
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 1px;
+  right: 2px;
+}
+
+@media (min-width: 768px) {
+  .bi-telephone {
+    line-height: 1;
+    margin: 0.4rem 0 1rem;
+    font-size: 1.3rem;
+    position: relative;
+  bottom: 5px;
+  left: 6px;
+  }
+}
+
+.nam {
+  margin-left: 0.2rem;
+  line-height: 1;
+  padding: 1rem 0 1rem;
+  letter-spacing: -0.015px;
+}
+
+@media (min-width: 768px) {
+  .nam {
+    margin-left: 1.4rem;
+    line-height: 1;
+    padding: 0rem 0 1rem;
+  }
+}
 
 
 /* contact
@@ -431,6 +563,7 @@ iframe {
   }
 }
 .contact .container {
+
   padding-top: 8.75rem;
   padding-bottom: 10rem;
 }
@@ -451,14 +584,14 @@ iframe {
 /* フッター
 ------------------------------------------ */
 .footer {
-  padding: 2.5rem 0;
+  padding: 2.4rem 0;
   text-align: center;
   color: #fff;
   background-color: #554b9c;
 }
 @media (min-width: 768px) {
   .footer {
-    padding: 2.4rem 0;
+    padding: 2.5rem 0;
   }
 }
 /* フッターナビゲーション */
