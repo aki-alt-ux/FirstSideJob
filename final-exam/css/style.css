@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+body {
+  font-family:  "Noto Sans JP", sans-serif; /* デザインカンプの設定を確認して指定しましょう */
+  line-height: 1.75;
+  color: #333; /* デザインカンプの設定を確認して指定しましょう */
+}
+
+a {
+  color: #333; /* デザインカンプの設定を確認して指定しましょう */
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* 部品
+------------------------------------------ */
+
+
+/* ヘッダー
+------------------------------------------ */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0079f2;
+  max-width: 100%;
+  height: 3.75rem;
+  margin-left: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1.6rem;
+
+}
