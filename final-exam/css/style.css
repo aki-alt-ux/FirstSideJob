@@ -175,8 +175,8 @@ li {
     margin-left: 0rem;
     margin-bottom: 0rem;
     position: fixed;
-    top: 1.4%;
-    left: 3.2%;
+    top: 1.8%;
+    left: 3.1%;
   }
 }
 
@@ -223,7 +223,6 @@ li {
   border-radius: 2rem;
   position: absolute;
   top: 4.9rem;
-  /* ヘッダーの高さ分下に配置 */
   left: 0;
   width: 100%;
   box-sizing: border-box;
@@ -270,7 +269,6 @@ li {
     position: absolute;
     top: 4.5%;
     right: 0%;
-    /* left: 64.4vw; */
     letter-spacing: -0.009rem;
     margin-right: 2rem;
   }
@@ -281,7 +279,7 @@ li {
 }
 
 @media (min-width: 768px) {
-  .button-pink {
+  .hamburger-menu .button-pink {
     display: none;
   }
 }
@@ -345,7 +343,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.255rem;
   font-weight: bold;
   margin: 0rem 0 0rem;
   background-color: rgba(255, 255, 255, 0.7);
@@ -359,13 +356,76 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.255rem;
     font-weight: bold;
     margin: 0rem 0 0rem;
     background-color: rgba(255, 255, 255, 0.7);
     height: 5.4rem;
     width: 23rem;
     border-radius: 0.5rem;
+  }
+}
+
+.first-pickup .cover-catch-up .orange-text .notoSansJp-bold-24px {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0.05rem;
+  left: -0.1rem;
+}
+
+@media (min-width: 768px) {
+  .first-pickup .cover-catch-up .orange-text .notoSansJp-bold-24px {
+    font-size: 2.8rem;
+    position: absolute;
+    bottom: 0.05rem;
+    left: -0.1rem;
+  }
+}
+
+.first-pickup .cover-catch-up .orange-text .notoSansJp-bold-20px {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0.07rem;
+  right: -5.1rem;
+}
+
+@media (min-width: 768px) {
+  .first-pickup .cover-catch-up .orange-text .notoSansJp-bold-20px {
+    font-size: 2.35rem;
+    position: absolute;
+    bottom: 0.27rem;
+    right: -9.65rem;
+  }
+}
+
+.first-pickup .cover-catch-up .green-text .notoSansJp-bold-24px {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0.1rem;
+  right: -6.585rem;
+}
+
+@media (min-width: 768px) {
+  .first-pickup .cover-catch-up .green-text .notoSansJp-bold-24px {
+    font-size: 2.8rem;
+    position: absolute;
+    bottom: 0rem;
+    right: -12.485rem;
+  }
+}
+
+.first-pickup .cover-catch-up .green-text .notoSansJp-bold-20px {
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 0.1rem;
+  right: -10.5rem;
+}
+
+@media (min-width: 768px) {
+  .first-pickup .cover-catch-up .green-text .notoSansJp-bold-20px {
+    font-size: 2.38rem;
+    position: absolute;
+    bottom: 0.1rem;
+    right: -19.6rem;
   }
 }
 
@@ -562,6 +622,22 @@ li {
   }
 }
 
+.third-pickup .cover-catch-up-text .notoSansJp-bold-20px {
+  position: absolute;
+  bottom: 0.1rem;
+  right: -6.28rem;
+  font-size: 1.31rem;
+}
+
+@media (min-width: 768px) {
+  .third-pickup .cover-catch-up-text .notoSansJp-bold-20px {
+    position: absolute;
+    bottom: 0.2rem;
+    right: -11.28rem;
+    font-size: 2.31rem;
+  }
+}
+
 .third-pickup .cover-catch-down {
   display: flex;
   justify-content: center;
@@ -722,7 +798,6 @@ li {
     position: absolute;
     bottom: 0.5rem;
     left: 1.7rem;
-    /* letter-spacing: -0.045rem; */
   }
 
   .fourth-pickup .cover-catch-down-text .notoSansJp-bold-20px {
@@ -821,7 +896,7 @@ li {
     bottom: 0.1rem;
     right: -6.8rem;
     font-size: 2.28rem;
-}
+  }
 }
 
 .fifth-pickup .cover-catch-down-text {
@@ -873,16 +948,130 @@ li {
 
   .slick-dots {
     text-align: right;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
+    position: absolute;
+    bottom: -1.51rem;
   }
 }
 
 
 
-ul.primaryNavMenu {
+/* ul.primaryNavMenu {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   flex-flow: row nowrap;
   -webkit-box-pack: justify;
   justify-content: space-between;
+} */
+
+
+
+
+/* カバー下のお知らせ
+------------------------------------------------------- */
+.coverUnder {
+  max-width: 100%;
+  position: relative;
+}
+
+.coverUnder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.1% 6% 0% 6%;
+}
+
+@media (min-width: 768px) {
+  .coverUnder-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.6% 6% 0% 6%;
+  }
+}
+
+.coverUnder-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+
+}
+
+.coverUnder-text-up {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: -0.065rem;
+}
+
+@media (min-width: 768px) {
+  .coverUnder-text-up {
+    font-size: 1.95rem;
+    text-align: center;
+    letter-spacing: -0.065rem;
+  }
+}
+
+.coverUnder-text-down {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: -0.07rem;
+}
+
+@media (min-width: 768px) {
+  .coverUnder-text-down {
+    font-size: 1.94rem;
+    text-align: center;
+  }
+}
+
+.coverUnder-button .button-pink {
+  height: 3.7rem;
+  width: 17.4rem;
+  font-size: 1.25rem;
+  margin: 5.2% 0% 0% 0%;
+}
+
+@media (min-width: 768px) {
+  .coverUnder-button .button-pink {
+    height: 3.6rem;
+    width: 19.7rem;
+    font-size: 1.26rem;
+    margin: 7.3% 0% 0% 0%;
+  }
+}
+
+.coverUnder-button-text {
+  position: absolute;
+  top: 18%;
+  left: 24.3%;
+}
+
+@media (min-width: 768px) {
+  .coverUnder-button-text {
+    position: absolute;
+    top: 16.8%;
+    left: 27.7%;
+  }
+}
+
+.coverUnder-button .bi-arrow-right-short {
+  position: absolute;
+  top: 1.9rem;
+  right: 1.1rem;
+  transform: translate(0%, -50%);
+  font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .coverUnder-button .bi-arrow-right-short {
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+    transform: translate(0%, -50%);
+    font-size: 1.7rem;
+  }
 }
