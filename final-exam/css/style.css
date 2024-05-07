@@ -42,6 +42,48 @@ li {
   font-size: 1.22rem;
 }
 
+.button-pink:hover {
+  background-color: #fff;
+  color: #f11f8d;
+  border: 1px solid #f11f8d;
+}
+
+/* 白色ボタン */
+.button-white {
+  position: relative;
+  display: block;
+  color: #f11f8d;
+  text-align: center;
+  border-radius: 3rem;
+  height: 3.5rem;
+  width: 19.6rem;
+  padding: .5rem 1rem 1rem;
+  background-color: #fff;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 980px) {
+  .button-white {
+    position: relative;
+    display: block;
+    color: #f11f8d;
+    text-align: center;
+    border-radius: 3rem;
+    height: 4.5rem;
+    width: 21.6rem;
+    padding: .5rem 1rem 1rem;
+    background-color: #fff;
+    font-size: 1.46rem;
+    transform: translateX(-0.1rem) translateY(0.15rem);
+  }
+}
+
+.button-white:hover {
+  background-color: #f11f8d;
+  color: #fff;
+  border: 1px solid #f11f8d;
+}
+
 /* ボタン→ */
 .bi-arrow-right-short {
   position: absolute;
@@ -49,7 +91,16 @@ li {
   right: 0.8rem;
   transform: translate(0%, -50%);
   font-size: 1.7rem;
+}
 
+@media (min-width: 980px) {
+  .bi-arrow-right-short {
+    position: absolute;
+    top: 1.9rem;
+    right: 1rem;
+    transform: translate(0%, -50%);
+    font-size: 3.2rem;
+  }
 }
 
 /* SNSリンク */
@@ -122,7 +173,12 @@ li {
 
 .black-text {
   color: #000000;
+}
 
+.pink-text {
+  color: #f11f8d;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
 }
 
 * {
@@ -1075,3 +1131,394 @@ li {
     font-size: 1.7rem;
   }
 }
+
+
+/* キャンペーン
+------------------------------------------- */
+.campaign {
+  margin-top: 2.5rem;
+  padding-bottom: 2.3rem;
+  background-color: #f2f8fe;
+}
+
+@media (min-width: 980px) {
+  .campaign {
+    margin-top: 4.6rem;
+    padding-bottom: 1.9rem;
+    background-color: #f2f8fe;
+  }
+}
+
+.campaign-container {
+  position: relative;
+}
+
+@media (min-width: 980px) {
+  .campaign-container {
+    display: flex;
+    background-color: #f2f8fe;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+  }
+}
+
+/* ロゴ */
+.campaign-container-up-logo {
+  display: flex;
+  padding-top: 2rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo {
+    display: flex;
+    padding-top: 3.9rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    transform: translateX(-1.2rem);
+  }
+}
+
+.campaign-container-up-logo img {
+  width: 2.1rem;
+  height: auto;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo img {
+    width: 3.0rem;
+    height: auto;
+  }
+}
+
+.campaign-container-up-logo .top {
+  font-size: 0.75rem;
+  color: #555555;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo .top {
+    font-size: 1rem;
+    color: #555555;
+  }
+}
+
+.campaign-container-up-logo .down {
+  font-size: 0.8125rem;
+  color: #333333;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo .down {
+    font-size: 1.25rem;
+    color: #333333;
+  }
+}
+
+.campaign-container-up-logo .no1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo .no1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+}
+
+.campaign-container-up-logo .※ {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 0.625rem;
+  color: #666666;
+  font-style: normal;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo .※ {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #666666;
+  }
+}
+
+/* 左側ロゴ */
+.campaign-container-up-logo-left {
+  display: flex;
+  margin-right: 0.5rem;
+}
+
+.campaign-container-up-logo-left-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.campaign-container-up-logo-left .top {
+  position: absolute;
+  top: 0rem;
+  left: 1.38rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-left .top {
+    position: absolute;
+    top: 0rem;
+    left: 2.28rem;
+  }
+}
+
+.campaign-container-up-logo-left .down {
+  position: relative;
+  top: -0.7rem;
+  left: 0.1rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-left .down {
+    position: relative;
+    top: -1rem;
+    left: 0.1rem;
+  }
+}
+
+.campaign-container-up-logo-left .no1 {
+  position: absolute;
+  top: 3.3rem;
+  left: 0.2rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-left .no1 {
+    position: absolute;
+    top: 4.7rem;
+    left: 1rem;
+  }
+}
+
+.campaign-container-up-logo-left .one {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-left .one {
+    font-size: 3.75rem;
+  }
+}
+
+.campaign-container-up-logo-left .※ {
+  position: absolute;
+  bottom: 1.1rem;
+  left: 4.4rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-left .※ {
+    position: absolute;
+    bottom: 1.7rem;
+    left: 5.6rem;
+  }
+}
+
+/* 右側ロゴ */
+.campaign-container-up-logo-right {
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.campaign-container-up-logo-right-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.campaign-container-up-logo-right .top {
+  position: absolute;
+  top: 0.05rem;
+  left: 1.68rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-right .top {
+    position: absolute;
+    top: 0.05rem;
+    left: 2.88rem;
+  }
+}
+
+.campaign-container-up-logo-right .down {
+  position: relative;
+  top: -0.75rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-right .down {
+    position: relative;
+    top: -1.15rem;
+  }
+}
+
+.campaign-container-up-logo-right .no1 {
+  position: absolute;
+  top: 3.3rem;
+  right: 1.6rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-right .no1 {
+    position: absolute;
+    top: 4.7rem;
+    right: 2.6rem;
+  }
+}
+
+.campaign-container-up-logo-right .one {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-right .one {
+    font-size: 3.75rem;
+  }
+}
+
+.campaign-container-up-logo-right .※ {
+  position: absolute;
+  bottom: 1.15rem;
+  left: 4.4rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-logo-right .※ {
+    position: absolute;
+    bottom: 1.75rem;
+    left: 5.55rem;
+  }
+}
+
+/* キャンペーン上段テキスト */
+.campaign-container-up-text {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-up-text {
+    text-align: start;
+    font-size: 0.75rem;
+    transform: translateX(-1.2rem) translateY(0.63rem);
+  }
+}
+
+@media (min-width: 980px) {
+  .campaign-container-down {
+    margin-top: -1.8rem;
+  }
+}
+
+/* キャンペーン下段テキスト */
+.campaign-container-down-text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 1;
+  color: #f11f8d;
+  transform: translateX(1.3rem) translateY(0.6rem);
+}
+
+.campaign-container-down-text::before,
+.campaign-container-down-text::after {
+  width: 0.125rem;
+  height: 1.75rem;
+  content: "";
+  background-color: #f11f8d;
+}
+
+.campaign-container-down-text::after {
+  margin-left: 0.8rem;
+  transform: rotate(30deg);
+}
+
+@media (min-width: 980px) {
+  .campaign-container-down-text::after {
+    transform: rotate(30deg);
+    position: absolute;
+    right: 6.4rem;
+  }
+}
+
+.campaign-container-down-text::before {
+  margin-top: 0.3rem;
+  margin-right: 0.9rem;
+  transform: rotate(-30deg);
+}
+
+@media (min-width: 980px) {
+  .campaign-container-down-text::before {
+    margin-top: 0.3rem;
+    transform: rotate(-30deg);
+    position: absolute;
+    left: 6rem;
+  }
+}
+
+.campaign-container-down-text span {
+  transform: translateY(-0.2rem);
+  padding-right: 0.3rem;
+
+}
+
+/* 白色ボタン */
+.campaign-container-down-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.65rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-down-button {
+    display: flex;
+    justify-content: center;
+    transform: translateX(1.2rem) translateY(1.3rem);
+  }
+}
+
+/* 白ボタン→ */
+.campaign-container-down-button .bi-arrow-right-short {
+  position: absolute;
+  top: 1.7rem;
+  right: 0.8rem;
+  transform: translate(0%, -50%);
+  font-size: 1.7rem;
+}
+
+@media (min-width: 980px) {
+  .campaign-container-down-button .bi-arrow-right-short {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    transform: translate(0%, -50%);
+    font-size: 2.1rem;
+  }
+}
+
+/* コース案内
+------------------------------------------------------ */
