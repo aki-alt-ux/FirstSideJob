@@ -36,3 +36,10 @@ $('.cover-slick').slick({
 $('.cover-slick').on('click', function() {
   $(this).slick('slickPause');
 });
+
+
+//タブ
+$('#smarttab').smartTab({
+  enableUrlHash: false
+});
+
