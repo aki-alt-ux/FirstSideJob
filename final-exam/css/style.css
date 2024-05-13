@@ -39,7 +39,9 @@ li {
   width: 17.2rem;
   padding: .8rem 1rem 1rem;
   background-color: #f11f8d;
-  font-size: 1.22rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 .button-pink:hover {
@@ -59,7 +61,10 @@ li {
   width: 19.6rem;
   padding: .5rem 1rem 1rem;
   background-color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
   font-size: 1.25rem;
+  border: 1px solid #f11f8d;
 }
 
 @media (min-width: 980px) {
@@ -73,8 +78,11 @@ li {
     width: 21.6rem;
     padding: .5rem 1rem 1rem;
     background-color: #fff;
-    font-size: 1.46rem;
-    transform: translateX(-0.1rem) translateY(0.15rem);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 1.45rem;
+    transform: translateX(0rem) translateY(-0.25rem);
+    border: 2px solid #f11f8d;
   }
 }
 
@@ -1010,17 +1018,6 @@ li {
 
 
 
-/* ul.primaryNavMenu {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-} */
-
-
-
-
 /* カバー下のお知らせ
 ------------------------------------------------------- */
 .coverUnder {
@@ -1513,6 +1510,12 @@ li {
   }
 }
 
+@media (min-width: 980px) {
+  .button-white .campaign-button-text {
+    transform: translateX(-0.1rem) translateY(0.3rem);
+  }
+}
+
 /* 白ボタン→ */
 .campaign-container-down-button .bi-arrow-right-short {
   position: absolute;
@@ -1527,7 +1530,7 @@ li {
     position: absolute;
     top: 1.7rem;
     right: 1rem;
-    transform: translate(0%, -50%);
+    transform: translate(5%, -40%);
     font-size: 2.1rem;
   }
 }
@@ -1562,7 +1565,7 @@ li {
   .courseInformation-title {
     text-align: center;
     width: 15rem;
-    padding-bottom: 0.9rem;
+    padding-bottom: 1.1rem;
     font-size: 2.27rem;
     margin: 0.5rem auto 1.47rem;
     transform: translateX(-0.05rem) translateY(0rem);
@@ -1572,7 +1575,7 @@ li {
 .courseInformation-title hr {
   background-color: #0079f2;
   border: none;
-  height: 3px;
+  height: 2.5px;
   width: 1.455rem;
   margin: 0.4rem auto 0;
 }
@@ -1632,7 +1635,17 @@ li {
     max-width: 19.4rem;
     height: auto;
     border-radius: 4%;
-    transform: translateX(0rem) translateY(1.4rem);
+    transform: translateX(0rem) translateY(1.6rem);
+  }
+}
+
+.tab-pane-img .courseInformation-tab-content-item:nth-child(3) img {
+  transform: translateX(0rem) translateY(1.2rem);
+}
+
+@media (min-width: 980px) {
+  .tab-pane-img .courseInformation-tab-content-item:nth-child(3) img {
+    transform: translateX(0rem) translateY(1.6rem);
   }
 }
 
@@ -1648,7 +1661,8 @@ li {
     font-size: 1.55rem;
     line-height: 1.1;
     text-align: center;
-    margin-top: 1.9rem;
+    margin-top: 2.15rem;
+    transform: translateX(0.1rem) translateY(0rem);
   }
 }
 
@@ -1732,7 +1746,7 @@ li {
     justify-content: space-between;
     flex-direction: row;
     max-width: 67.5rem;
-    padding: 1.85rem 0.55rem 2rem;
+    padding: 1.65rem 0.55rem 2rem;
     height: 24.2rem;
     border-radius: 0 0 0.437rem 0.437rem;
   }
@@ -1797,7 +1811,7 @@ li {
     text-align: center;
     padding-top: 1.5rem;
     font-size: 1.25rem;
-    transform: translateX(0.13rem) translateY(0.38rem);
+    transform: translateX(0.03rem) translateY(0.28rem);
   }
 }
 
@@ -1816,7 +1830,7 @@ li {
     height: 3.8rem;
     width: 19.9rem;
     font-size: 1.25rem;
-    transform: translateX(0rem) translateY(1.7rem);
+    transform: translateX(0rem) translateY(1.55rem);
     margin: 0 auto 0;
   }
 }
@@ -1826,8 +1840,14 @@ li {
 }
 
 .inquiry-button .bi-arrow-right-short {
-  transform: translateX(-0.25rem) translateY(-1.55rem);
+  transform: translateX(-0.3rem) translateY(-1.55rem);
   font-size: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .inquiry-button .bi-arrow-right-short {
+    transform: translateX(-0.1rem) translateY(-1.55rem);
+  }
 }
 
 /* 3つの特色
@@ -1923,7 +1943,7 @@ li {
     height: auto;
     border-radius: 2%;
     transform: translateX(0.95rem) translateY(2.3rem);
-}
+  }
 }
 
 @media (min-width: 768px) {
@@ -1932,7 +1952,7 @@ li {
     height: auto;
     border-radius: 2%;
     transform: translateX(-0.75rem) translateY(4.9rem);
-}
+  }
 }
 
 @media (min-width: 768px) {
@@ -1941,7 +1961,7 @@ li {
     height: auto;
     border-radius: 2%;
     transform: translateX(0.85rem) translateY(7.7rem);
-}
+  }
 }
 
 /* テキスト */
@@ -1958,7 +1978,7 @@ li {
     margin-left: 0;
     margin-right: 0;
     transform: translateX(-0.95rem) translateY(7.6rem);
-}
+  }
 }
 
 @media (min-width: 768px) {
@@ -1968,7 +1988,7 @@ li {
     margin-left: 0;
     margin-right: 0;
     transform: translateX(2.05rem) translateY(10.2rem);
-}
+  }
 }
 
 @media (min-width: 768px) {
@@ -1978,7 +1998,7 @@ li {
     margin-left: 0;
     margin-right: 0;
     transform: translateX(-0.95rem) translateY(13rem);
-}
+  }
 }
 
 .characteristics-text .green-text {
@@ -1998,13 +2018,13 @@ li {
     font-weight: 800;
     font-size: 4.8rem;
     transform: translateX(0.1rem) translateY(-0.6rem);
-}
+  }
 }
 
 .characteristics-text .normal-text {
   text-align: left;
   margin-top: 0.1rem;
-  padding-right: 2%;
+  padding-right: 2rem;
   font-size: 1.1rem;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
@@ -2015,6 +2035,7 @@ li {
   .characteristics-text .normal-text {
     text-align: left;
     margin-top: 0.1rem;
+    padding-right: 1rem;
     font-size: 1.47rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
@@ -2022,9 +2043,218 @@ li {
   }
 }
 
-
-
 /* ページ読み込み直後にフェードイン要素を非表示にする */
 .js-fadein-left {
   opacity: 0;
+}
+
+/* お問い合わせ（流用02）
+----------------------------------------------------- */
+.inquiryDiversion02 .inquiry-container {
+  margin-top: 2.4rem;
+  transform: translateX(0rem) translateY(0rem);
+}
+
+@media (min-width: 768px) {
+  .inquiryDiversion02 .inquiry-container {
+    margin-top: 13.35rem;
+  }
+}
+
+
+/* 講師紹介
+------------------------------------------------------- */
+.LecturerIntroduction-container {
+  max-width: 100%;
+}
+
+.LecturerIntroduction-title {
+  text-align: center;
+  width: 7.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  margin: 4.5rem auto 0.97rem;
+  transform: translateX(-0.05rem) translateY(0rem);
+}
+
+@media (min-width: 768px) {
+  .LecturerIntroduction-title {
+    text-align: center;
+    width: 15rem;
+    padding-bottom: 1.1rem;
+    font-size: 2.27rem;
+    margin: 6rem auto 1.47rem;
+    transform: translateX(-0.05rem) translateY(0rem);
+  }
+}
+
+.LecturerIntroduction-title hr {
+  background-color: #0079f2;
+  border: none;
+  height: 2.5px;
+  width: 1.455rem;
+  margin: 0.5rem auto 0;
+}
+
+@media (min-width: 768px) {
+  .LecturerIntroduction-title hr {
+    background-color: #0079f2;
+    border: none;
+    height: 3px;
+    width: 2.3rem;
+    margin: 0.75rem auto 0;
+    transform: translateX(0.15rem) translateY(0rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .LecturerIntroduction-teacher-box {
+    max-width: 100%;
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.LecturerIntroduction-teacher {
+  width: 19.375rem;
+  height: 23.25rem;
+  background-color: #ffeee5;
+  margin: 0 auto 0;
+  border-radius: 2%;
+}
+
+@media (min-width: 768px) {
+  .LecturerIntroduction-teacher {
+    width: 22.5rem;
+    height: 24.625rem;
+    margin: 0 0 0;
+  }
+}
+
+.LecturerIntroduction-photo {
+  text-align: center;
+  transform: translateX(0rem) translateY(1.05rem);
+}
+
+@media (min-width: 768px) {
+  .LecturerIntroduction-photo {
+    transform: translateX(0rem) translateY(1.4rem);
+  }
+}
+
+.LecturerIntroduction-name {
+  text-align: center;
+  transform: translateX(0rem) translateY(1.55rem);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .LecturerIntroduction-name {
+    transform: translateX(0rem) translateY(2.15rem);
+  }
+}
+
+.LecturerIntroduction-name-down {
+  font-size: .875rem;
+  transform: translateX(0rem) translateY(0.1rem);
+}
+
+.LecturerIntroduction-text {
+  max-width: 17.375rem;
+  height: 8.15rem;
+  background-color: #fff;
+  margin: 0 auto 0;
+  padding: .4688rem 1rem 0rem;
+  transform: translateX(0rem) translateY(2.6rem);
+  border-radius: 4.5%;
+}
+
+@media (min-width: 768px) {
+  .LecturerIntroduction-text {
+    max-width: 19.5rem;
+    height: 8.1875rem;
+    transform: translateX(0rem) translateY(3.4rem);
+  }
+}
+
+.LecturerIntroduction-teacher:nth-of-type(2) {
+  margin-top: 1.5rem;
+  background-color: #fff6e5;
+}
+
+@media (min-width: 768px) {
+  .LecturerIntroduction-teacher:nth-of-type(2) {
+    margin: 0rem;
+    background-color: #fff6e5;
+  }
+}
+
+/* お問い合わせ（流用03）
+----------------------------------------------------- */
+.inquiryDiversion03 .inquiry-container {
+  margin-top: 5.1rem;
+  transform: translateX(0rem) translateY(0rem);
+}
+
+@media (min-width: 768px) {
+  .inquiryDiversion03 .inquiry-container {
+    margin-top: 5.758rem;
+  }
+}
+
+/* ボタン→ */
+.inquiryDiversion03 .bi-arrow-right-short {
+  transform: translate(-16%, -52%);
+}
+
+@media (min-width: 768px) {
+  .inquiryDiversion03 .bi-arrow-right-short {
+    transform: translate(-9.6%, -53.7%);
+  }
+}
+
+/* 料金プラン
+-------------------------------------------------------- */
+
+.ratePlan-title {
+  text-align: center;
+  width: 7.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  margin: 4.5rem auto 0.97rem;
+  transform: translateX(-0.05rem) translateY(0rem);
+}
+
+@media (min-width: 768px) {
+  .ratePlan-title {
+    text-align: center;
+    width: 15rem;
+    padding-bottom: 1.1rem;
+    font-size: 2.27rem;
+    margin: 6rem auto 1.47rem;
+    transform: translateX(-0.05rem) translateY(0rem);
+  }
+}
+
+.ratePlan-title hr {
+  background-color: #0079f2;
+  border: none;
+  height: 2.5px;
+  width: 1.455rem;
+  margin: 0.5rem auto 0;
+}
+
+@media (min-width: 768px) {
+  .ratePlan-title hr {
+    background-color: #0079f2;
+    border: none;
+    height: 3px;
+    width: 2.3rem;
+    margin: 0.75rem auto 0;
+    transform: translateX(0.15rem) translateY(0rem);
+  }
 }
