@@ -151,6 +151,12 @@ li {
   }
 }
 
+.poppins-extraBold-32px {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
 .poppins-extraBold-20px {
   font-family: 'Poppins', sans-serif;
   font-size: 1.25rem;
@@ -1567,7 +1573,7 @@ li {
     width: 15rem;
     padding-bottom: 1.1rem;
     font-size: 2.27rem;
-    margin: 0.5rem auto 1.47rem;
+    margin: 0.5rem auto 1.27rem;
     transform: translateX(-0.05rem) translateY(0rem);
   }
 }
@@ -1803,7 +1809,7 @@ li {
 .inquiry-text {
   text-align: center;
   padding-top: 1.5rem;
-  transform: translateX(-0.15rem) translateY(0rem);
+  transform: translateX(-0.25rem) translateY(0rem);
 }
 
 @media (min-width: 768px) {
@@ -1830,7 +1836,7 @@ li {
     height: 3.8rem;
     width: 19.9rem;
     font-size: 1.25rem;
-    transform: translateX(0rem) translateY(1.55rem);
+    transform: translateX(0rem) translateY(1.7rem);
     margin: 0 auto 0;
   }
 }
@@ -2031,6 +2037,22 @@ li {
   transform: translateX(0rem) translateY(-2.1rem);
 }
 
+.characteristics-img-second .characteristics-text .normal-text {
+  font-size: 1.115rem;
+  transform: translateX(0rem) translateY(-2.2rem);
+}
+
+@media (min-width: 768px) {
+  .characteristics-img-second .characteristics-text .normal-text {
+    font-size: 1.467rem;
+    transform: translateX(0rem) translateY(-2.2rem);
+  }
+}
+
+.characteristics-img-third .characteristics-text .normal-text {
+  transform: translateX(0rem) translateY(-2.3rem);
+}
+
 @media (min-width: 768px) {
   .characteristics-text .normal-text {
     text-align: left;
@@ -2039,7 +2061,7 @@ li {
     font-size: 1.47rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
-    transform: translateX(0rem) translateY(-2.1rem);
+    transform: translateX(0rem) translateY(-2.3rem);
   }
 }
 
@@ -2052,12 +2074,21 @@ li {
 ----------------------------------------------------- */
 .inquiryDiversion02 .inquiry-container {
   margin-top: 2.4rem;
-  transform: translateX(0rem) translateY(0rem);
 }
 
 @media (min-width: 768px) {
   .inquiryDiversion02 .inquiry-container {
     margin-top: 13.35rem;
+  }
+}
+
+.inquiryDiversion02 .inquiry-text {
+  transform: translateX(0rem) translateY(0rem);
+}
+
+@media (min-width: 768px) {
+  .inquiryDiversion02 .inquiry-text {
+    transform: translateX(0rem) translateY(0.3rem);
   }
 }
 
@@ -2083,7 +2114,7 @@ li {
     width: 15rem;
     padding-bottom: 1.1rem;
     font-size: 2.27rem;
-    margin: 6rem auto 1.47rem;
+    margin: 6rem auto 1.37rem;
     transform: translateX(-0.05rem) translateY(0rem);
   }
 }
@@ -2103,7 +2134,7 @@ li {
     height: 3px;
     width: 2.3rem;
     margin: 0.75rem auto 0;
-    transform: translateX(0.15rem) translateY(0rem);
+    transform: translateX(0rem) translateY(0rem);
   }
 }
 
@@ -2202,7 +2233,17 @@ li {
 
 @media (min-width: 768px) {
   .inquiryDiversion03 .inquiry-container {
-    margin-top: 5.758rem;
+    margin-top: 5.858rem;
+  }
+}
+
+.inquiryDiversion03 .inquiry-text {
+  transform: translateX(-0.05rem) translateY(-0.05rem);
+}
+
+@media (min-width: 768px) {
+  .inquiryDiversion03 .inquiry-text {
+    transform: translateX(-0.05rem) translateY(0.35rem);
   }
 }
 
@@ -2223,10 +2264,10 @@ li {
 .ratePlan-title {
   text-align: center;
   width: 7.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.2rem;
   font-size: 1.5rem;
-  margin: 4.5rem auto 0.97rem;
-  transform: translateX(-0.05rem) translateY(0rem);
+  margin: 4.5rem auto 0.7rem;
+  transform: translateX(0.05rem) translateY(-0.3rem);
 }
 
 @media (min-width: 768px) {
@@ -2235,8 +2276,8 @@ li {
     width: 15rem;
     padding-bottom: 1.1rem;
     font-size: 2.27rem;
-    margin: 6rem auto 1.47rem;
-    transform: translateX(-0.05rem) translateY(0rem);
+    margin: 6.2rem auto 1.47rem;
+    transform: translateX(0.05rem) translateY(-0.1rem);
   }
 }
 
@@ -2255,6 +2296,295 @@ li {
     height: 3px;
     width: 2.3rem;
     margin: 0.75rem auto 0;
-    transform: translateX(0.15rem) translateY(0rem);
+    transform: translateX(-0.05rem) translateY(-0.15rem);
+  }
+}
+
+/* テーブル上段 */
+.ratePlan-table-subject {
+  text-align: center;
+  font-size: 1.25rem;
+  transform: translateX(-2.43rem) translateY(0rem);
+  margin: 0px auto 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-subject {
+    font-size: 1.5625rem;
+    transform: translateX(-12.63rem) translateY(-1.1rem);
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 22.375rem;
+  margin: 0 auto 0;
+  border: 3px solid #dddddd;
+}
+
+@media (min-width: 768px) {
+  table {
+    width: 46.975rem;
+    transform: translateX(0rem) translateY(-1.2rem);
+  }
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: center;
+}
+
+th {
+  color: #333333;
+  background-color: #f5f5f5;
+}
+
+th:first-child {
+  width: 7.2rem;
+  height: 3rem;
+}
+
+@media (min-width: 768px) {
+  th:first-child {
+    width: 6.85rem;
+  }
+}
+
+th:nth-child(2) {
+  width: 14.8rem;
+}
+
+td {
+  height: 5.5rem;
+  color: #0079f2;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  td {
+    font-size: 1.125rem;
+    height: 6.075rem;
+  }
+}
+
+.price-text {
+  color: #333333;
+  font-size: .875rem;
+  font-weight: 400;
+  transform: translateX(0rem) translateY(0.4rem);
+}
+
+@media (min-width: 768px) {
+  .price-text {
+    font-size: 1.017rem;
+    transform: translateX(0rem) translateY(0.5rem);
+  }
+}
+
+.ratePlan-container .poppins-extraBold-32px span {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: .875rem;
+}
+
+.ratePlan-table-box-up .green-text {
+  transform: translateX(0rem) translateY(0.3rem);
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-up .green-text {
+    font-size: 2.25rem;
+    transform: translateX(0rem) translateY(0rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .ratePlan-container .poppins-extraBold-32px span {
+    font-size: 1rem;
+  }
+}
+
+.ratePlan-table-undertext {
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: .75rem;
+  color: #666666;
+  transform: translateX(0rem) translateY(0.1rem);
+  margin-bottom: 3.2rem;
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-undertext {
+    transform: translateX(-16.9rem) translateY(-1rem);
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* テーブル下段 */
+.ratePlan-table-box-down .ratePlan-table-subject {
+  text-align: center;
+  transform: translateX(-6.13rem) translateY(0rem);
+  margin: 0px auto 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down .ratePlan-table-subject {
+    transform: translateX(-17.43rem) translateY(-2.4rem);
+  }
+}
+
+.ratePlan-table-box-down table {
+  height: 23.0625rem;
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down table {
+    height: 20rem;
+    transform: translateX(0rem) translateY(-2.7rem);
+  }
+}
+
+.ratePlan-table-box-down th:first-child {
+  width: 8.3rem;
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down th:first-child {
+    width: 6.48rem;
+  }
+}
+
+.ratePlan-table-box-down th:nth-child(2) {
+  width: 14rem;
+}
+
+.ratePlan-table-box-down td {
+  height: 7.2rem;
+}
+
+.ratePlan-table-box-down table tr:nth-child(3) td {
+  height: 5.7rem;
+}
+
+.ratePlan-table-box-down-td {
+  transform: translateX(0rem) translateY(-0.1rem);
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down-td {
+    transform: translateX(0rem) translateY(0rem);
+  }
+}
+
+.ratePlan-table-box-down table tr:nth-child(4) td {
+  height: 7rem;
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down td {
+    height: 6.2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down table tr:nth-child(3) td {
+    transform: translateX(0rem) translateY(0.2rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down table tr:nth-child(4) td {
+    height: 6.3rem;
+    transform: translateX(0rem) translateY(0.2rem);
+  }
+}
+
+.ratePlan-table-box-down .price-text p {
+  max-width: 100%;
+  text-align: center;
+  padding: 0 0.5rem 0;
+  transform: translateX(0rem) translateY(-0.1rem);
+}
+
+@media (min-width: 768px) {
+
+  .ratePlan-table-box-down .price-text-second p,
+  .ratePlan-table-box-down .price-text-third p {
+    transform: translateX(0rem) translateY(0.3rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down .price-text p:nth-child(2) {
+    transform: translateX(0rem) translateY(1.0rem);
+  }
+}
+
+.ratePlan-table-box-down .green-text {
+  transform: translateX(0rem) translateY(-0.3rem);
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down .green-text {
+    font-size: 2.25rem;
+    transform: translateX(0rem) translateY(-0.5rem);
+  }
+}
+
+.price-text-second {
+  transform: translateX(0rem) translateY(0.4rem);
+}
+
+@media (min-width: 768px) {
+
+  .ratePlan-table-box-down .price-text-second .green-text,
+  .ratePlan-table-box-down .price-text-third .green-text {
+    font-size: 2.25rem;
+    transform: translateX(0.1rem) translateY(0rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .ratePlan-table-box-down .ratePlan-table-undertext {
+    transform: translateX(-16.9rem) translateY(-2.7rem);
+    margin-bottom: 3.2rem;
+  }
+}
+
+/* お問い合わせ（流用04）
+----------------------------------------------------- */
+.inquiryDiversion04 .inquiry-container {
+  margin-top: 5.6rem;
+  transform: translateX(0rem) translateY(-0.7rem);
+}
+
+@media (min-width: 768px) {
+  .inquiryDiversion04 .inquiry-container {
+    margin-top: 4.2rem;
+    height: 13.8rem;
+    transform: translateX(0rem) translateY(0rem);
+  }
+}
+
+.inquiryDiversion04 .inquiry-text {
+  transform: translateX(-0.05rem) translateY(-0.05rem);
+}
+
+@media (min-width: 768px) {
+  .inquiryDiversion04 .inquiry-text {
+    transform: translateX(-0.05rem) translateY(0.35rem);
+  }
+}
+
+/* ボタン→ */
+.inquiryDiversion04 .inquiry-button .button-pink {
+  transform: translateX(0rem) translateY(1.15rem);
+}
+
+@media (min-width: 768px) {
+  .inquiryDiversion04 .inquiry-button .button-pink {
+    transform: translateX(0rem) translateY(1.65rem);
   }
 }
