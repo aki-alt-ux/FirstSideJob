@@ -1,17 +1,58 @@
-/* セクションのCSS */
-.section {
-  height: 100vh;
-  border-top: 1px solid #040000;
+/* アコーディオンのタイトル部分 */
+.accordion-title {
+  display: block;
+  margin: 0;
+  font-size: 1rem;
+  color: #333333;
+
+  border: 1px solid #f26618;
+  cursor: pointer;
+  width: 22.375rem;
+  height: 7.5rem;
 }
 
-/* ボックスのCSS */
-.box {
-  width: 25rem;
-  height: 12.5rem;
-  background-color: #040000;
+/* アコーディオンのQ部分 */
+.accordion-q {
+  display: flex;
+  align-items: center;
 }
 
-/* ページ読み込み直後にフェードイン要素を非表示にする */
-.js-fadein-left {
-  opacity: 0;
+.accordion-q-icon {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* アコーディオンのA部分 */
+.accordion-a {
+  display: none; /* 初期状態は非表示 */
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #040000;
+}
+
+.accordion-a-icon {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* アコーディオンのコンテンツ部分 */
+.accordion-a-text {
+  display: inline-block;
+}
+
+/* アコーディオンのスイッチ部分 */
+.accordion-switch {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #fff;
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* アコーディオンが開いている時のスイッチ */
+.accordion-title.open .accordion-switch {
+  transform: rotate(180deg);
 }

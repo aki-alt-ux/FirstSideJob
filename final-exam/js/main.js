@@ -1,3 +1,9 @@
+// クリックでカルーセルを停止
+$('.cover-slick').on('click', function() {
+  $(this).slick('slickPause');
+});
+
+
 var hamburger = $('.hamburger-menu');
 
 // ハンバーガーボタン
@@ -31,12 +37,6 @@ $('.cover-slick').slick({
   autoplaySpeed: 5000,
   fade: true
 });
-
-// クリックでカルーセルを停止
-$('.cover-slick').on('click', function() {
-  $(this).slick('slickPause');
-});
-
 
 //タブ
 $('#smarttab').smartTab({
@@ -84,3 +84,17 @@ $('.js-fadein-right').waypoint({
   offset: '50%',
 });
 
+// よくあるご質問 アコーディオン
+$(document).ready(function() {
+  $('.accordion-title').click(function() {
+    var accordion_title = $(this);
+    var accordion_content = accordion_title.find('.accordion-a');
+    var accordion_switch = accordion_title.find('.accordion-switch');
+
+    // アコーディオンのコンテンツを表示/非表示
+    accordion_content.slideToggle();
+
+    // スイッチを回転
+    accordion_title.toggleClass('open');
+  });
+});

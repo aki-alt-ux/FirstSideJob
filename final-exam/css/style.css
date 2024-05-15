@@ -193,9 +193,9 @@ li {
   font-weight: 700;
 }
 
-/* * {
+* {
   outline: 1px solid magenta;
-} */
+}
 
 /* ヘッダー
 ------------------------------------------ */
@@ -2587,4 +2587,136 @@ td {
   .inquiryDiversion04 .inquiry-button .button-pink {
     transform: translateX(0rem) translateY(1.65rem);
   }
+}
+
+/* よくあるご質問
+------------------------------------------------------ */
+.faq-title {
+  text-align: center;
+  width: 15rem;
+  padding-bottom: 0.2rem;
+  font-size: 1.5rem;
+  margin: 4rem auto 0.7rem;
+  transform: translateX(0.05rem) translateY(-0.3rem);
+}
+
+@media (min-width: 768px) {
+  .faq-title {
+    text-align: center;
+    width: 20rem;
+    padding-bottom: 1.1rem;
+    font-size: 2.27rem;
+    margin: 6.2rem auto 1.47rem;
+    transform: translateX(0.05rem) translateY(-0.1rem);
+  }
+}
+
+.faq-title hr {
+  background-color: #0079f2;
+  border: none;
+  height: 2.5px;
+  width: 1.455rem;
+  margin: 0.5rem auto 0;
+}
+
+@media (min-width: 768px) {
+  .faq-title hr {
+    background-color: #0079f2;
+    border: none;
+    height: 3px;
+    width: 2.3rem;
+    margin: 0.75rem auto 0;
+    transform: translateX(-0.05rem) translateY(-0.15rem);
+  }
+}
+
+.faq-container {
+  max-width: 100%;
+}
+
+/* アコーディオンのタイトル部分 */
+.accordion-title {
+  display: block;
+  margin: 17.9px auto 0;
+  font-size: 1rem;
+  color: #333333;
+  border: 1px solid #f26618;
+  cursor: pointer;
+  width: 22.375rem;
+  border-radius: 4%;
+}
+
+/* アコーディオンのQ部分 */
+.accordion-q {
+  display: flex;
+  text-align: center;
+}
+
+.accordion-q-icon {
+  align-items: center;
+  margin: 0.8rem 1rem 0rem 1.4rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #ffeee5;
+  color: #f26618;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+/* アコーディオンのA部分(表示非表示を管轄) */
+.accordion-a {
+  display: none;
+  /* 初期状態は非表示 */
+  background-color: #ffeee5;
+}
+
+/* もう一つ flexを管轄するdivを作成する */
+.accordion-a-flex {
+  display: flex;
+
+  align-items: center;
+}
+
+.accordion-a-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  /* 16ptに相当するサイズ */
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #f26618;
+  /* 丸の部分の色 */
+  color: #ffffff;
+  /* フォントの色 */
+  font-family: 'Poppins', sans-serif;
+  /* フォントファミリー */
+  font-weight: bold;
+  /* 太字 */
+  font-size: 16pt;
+  /* フォントサイズ */
+}
+
+/* アコーディオンのコンテンツ部分 */
+.accordion-a-text {
+  display: inline-block;
+}
+
+/* アコーディオンのスイッチ部分 */
+.accordion-switch {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #f2a118;
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* アコーディオンが開いている時のスイッチ */
+.accordion-title.open .accordion-switch {
+  transform: rotate(180deg);
 }
