@@ -2595,6 +2595,12 @@ td {
   height: 87.3rem;
 }
 
+@media (min-width: 768px) {
+  .faq-container-box {
+    height: 68.9rem;
+  }
+}
+
 .faq-title {
   text-align: center;
   width: 15rem;
@@ -2608,7 +2614,7 @@ td {
   .faq-title {
     text-align: center;
     width: 20rem;
-    padding-bottom: 1.1rem;
+    padding-bottom: 0.6rem;
     font-size: 2.27rem;
     margin: 6.2rem auto 1.47rem;
     transform: translateX(0.05rem) translateY(-0.1rem);
@@ -2652,6 +2658,16 @@ td {
   border-radius: 0.437rem 0.437rem 0.437rem 0.437rem;
 }
 
+@media (min-width: 768px) {
+  .accordion-title {
+    max-width: 100%;
+    display: block;
+    margin: 0rem auto 1.3rem;
+    font-size: 1rem;
+    width: 56.2rem;
+  }
+}
+
 /* アコーディオンのQ部分 */
 .accordion-q {
   display: flex;
@@ -2661,7 +2677,7 @@ td {
 @media (min-width: 768px) {
   .accordion-q {
     display: flex;
-    padding: 0.95rem 0rem 1rem 1.65rem;
+    padding: 0.95rem 0rem 1.4rem 1.65rem;
   }
 }
 
@@ -2683,9 +2699,26 @@ td {
   transform: translateX(-0.7rem) translateY(0rem);
 }
 
+@media (min-width: 768px) {
+  .accordion-q-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    transform: translateX(-0.3rem) translateY(0.15rem);
+}
+}
+
 .accordion-q-text {
   width: 16.25rem;
   margin: 0rem 0rem 0rem 0.05rem;
+}
+
+@media (min-width: 768px) {
+  .accordion-q-text {
+    width: 45rem;
+    margin: 0.7rem 0rem 0rem 0.85rem;
+  }
 }
 
 /* アコーディオンのスイッチ部分 */
@@ -2698,6 +2731,19 @@ td {
   border-right: 6px solid transparent;
   border-bottom: 8px solid #f2a118;
   transition: transform 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .accordion-switch {
+    width: 0;
+    height: 0;
+    margin: 1.3rem 0rem 0rem 3.05rem;
+    padding: 0rem 0rem 0rem 0rem;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 14px solid #f2a118;
+    transition: transform 0.3s ease-in-out;
+}
 }
 
 /* アコーディオンのA部分(表示非表示を管轄) */
@@ -2715,7 +2761,7 @@ td {
     /* 初期状態は非表示 */
     background-color: #ffeee5;
     display: flex;
-    padding: 0.95rem 0rem 1rem 0rem;
+    padding: 0.95rem 0rem 1.9rem 0rem;
   }
 }
 
@@ -2741,10 +2787,28 @@ td {
   line-height: 1rem;
 }
 
+@media (min-width: 768px) {
+  .accordion-a-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    transform: translateX(
+      0.4rem) translateY(0.15rem);
+  }
+}
+
 /* アコーディオンのコンテンツ部分 */
 .accordion-a-text {
   width: 16.25rem;
   margin: 0rem 0rem 0rem 0.2rem;
+}
+
+@media (min-width: 768px) {
+  .accordion-a-text {
+    width: 46.7rem;
+    margin: 0.7rem 0rem 0rem 1.05rem;
+  }
 }
 
 
@@ -2762,6 +2826,12 @@ td {
   letter-spacing: 0.03em;
 }
 
+@media (min-width: 768px) {
+  .accordion-item:nth-of-type(3) .accordion-q .accordion-q-text {
+    letter-spacing: 0em;
+  }
+}
+
 .accordion-item:nth-of-type(3) .accordion-a .accordion-a-flex {
   padding: 0.15rem 0rem 0rem 0.95rem;
 }
@@ -2773,6 +2843,13 @@ td {
   background-color: #f2f8fe;
 }
 
+@media (min-width: 768px) {
+  .inquiryDiversion05 {
+    background-color: #f2f8fe;
+    line-height: 0;
+  }
+}
+
 .inquiryDiversion05 .inquiry-container {
   margin-top: 5.6rem;
   transform: translateX(0rem) translateY(-0.7rem);
@@ -2780,9 +2857,10 @@ td {
 
 @media (min-width: 768px) {
   .inquiryDiversion05 .inquiry-container {
+    height: 13.7rem;
     margin-top: 4.2rem;
-    height: 13.8rem;
     transform: translateX(0rem) translateY(0rem);
+  line-height: 1.75;
   }
 }
 
@@ -2810,12 +2888,25 @@ td {
 /* フッター
 ----------------------------------------------------- */
 .footer-container {
+  max-width: 24.375rem;
   height: 16.2rem;
-  background-color: #f11f8d;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    max-width: 96rem;
+    height: 19.3rem;
+  }
 }
 
 .footer-sns {
   max-width: 24.375rem;
+}
+
+@media (min-width: 768px) {
+  .footer-sns {
+    max-width: 100%;
+  }
 }
 
 .footer-sns-li {
@@ -2828,10 +2919,30 @@ td {
   font-size: 2rem;
 }
 
+@media (min-width: 768px) {
+  .footer-sns-li {
+    background-color: #222222;
+    height: 10.6rem;
+    display: flex;
+    column-gap: 2.3rem;
+    justify-content: center;
+    padding-top: 4.6rem;
+    font-size: 2rem;
+  }
+}
+
 .footer-log {
   display: flex;
   justify-content: center;
   margin-top: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .footer-log {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
 }
 
 .footer-bottom {
@@ -2841,6 +2952,12 @@ td {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: bold;
   font-size: 0.83rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    margin-top: 1.7rem;
+  }
 }
 
 /* * {
