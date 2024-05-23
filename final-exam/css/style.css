@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-* {
-  outline: 1px solid red;
-}
-
 /* ページ全体のスタイル
 ------------------------------------------ */
 body {
@@ -1241,6 +1237,7 @@ li {
 
 @media (min-width: 768px) {
   .courseInformation-container {
+    width: calc(100% - 2rem);
     max-width: 67.5rem;
     margin: 0 auto 0;
     padding: 5.4rem 0 0;
@@ -1252,6 +1249,7 @@ li {
   width: 7.5rem;
   padding-bottom: 1rem;
   font-size: 1.5rem;
+  font-weight: 700;
   margin: 0.5rem auto 0.97rem;
 }
 
@@ -1261,6 +1259,7 @@ li {
     width: 15rem;
     padding-bottom: 1.1rem;
     font-size: 2.25rem;
+    font-weight: 700;
     margin: 0.5rem auto 1.27rem;
   }
 }
@@ -1277,8 +1276,8 @@ li {
   .courseInformation-title hr {
     background-color: #0079f2;
     border: none;
-    height: 1px;
-    width: 2.3rem;
+    height: .1875rem;
+    width: 2.25rem;
     margin: 0.7rem auto 0;
   }
 }
@@ -1535,6 +1534,7 @@ li {
   font-size: 1.5rem;
   text-align: center;
   margin: 4.15rem 0 0;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -1542,6 +1542,7 @@ li {
     text-align: center;
     font-size: 2.25rem;
     margin-top: 5.8rem;
+    font-weight: 700;
   }
 }
 
@@ -1557,8 +1558,8 @@ li {
   .characteristics-title hr {
     background-color: #0079f2;
     border: none;
-    height: 2px;
-    width: 2.255rem;
+    height: .1875rem;
+    width: 2.25rem;
     margin: 0.6rem auto 0;
   }
 }
@@ -1732,6 +1733,7 @@ li {
   padding-bottom: 1rem;
   font-size: 1.5rem;
   margin: 4.5rem auto 0.97rem;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -1741,6 +1743,7 @@ li {
     padding-bottom: 1.1rem;
     font-size: 2.25rem;
     margin: 6rem auto 1.37rem;
+    font-weight: 700;
   }
 }
 
@@ -1756,8 +1759,8 @@ li {
   .LecturerIntroduction-title hr {
     background-color: #0079f2;
     border: none;
-    height: 3px;
-    width: 2.3rem;
+    height: .1875rem;
+    width: 2.25rem;
     margin: 0.75rem auto 0;
   }
 }
@@ -1877,6 +1880,7 @@ li {
   padding-bottom: 0.2rem;
   font-size: 1.5rem;
   margin: 4.25rem auto 0.7rem;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -1886,6 +1890,7 @@ li {
     padding-bottom: 1.1rem;
     font-size: 2.25rem;
     margin: 5.8rem auto 0.67rem;
+    font-weight: 700;
   }
 }
 
@@ -1902,7 +1907,7 @@ li {
     background-color: #0079f2;
     border: none;
     height: .1875rem;
-    width: 2.3rem;
+    width: 2.25rem;
     margin: 0.6rem auto 0;
   }
 }
@@ -2179,6 +2184,7 @@ th:nth-child(2) {
   padding-bottom: 0.2rem;
   font-size: 1.5rem;
   margin: 4.3rem auto 1.6rem;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -2188,6 +2194,7 @@ th:nth-child(2) {
     padding-bottom: 0.6rem;
     font-size: 2.25rem;
     margin: 6.2rem auto 1.47rem;
+    font-weight: 700;
   }
 }
 
@@ -2203,8 +2210,8 @@ th:nth-child(2) {
   .faq-title hr {
     background-color: #0079f2;
     border: none;
-    height: 3px;
-    width: 2.3rem;
+    height: .1875rem;
+    width: 2.25rem;
     margin: 0.75rem auto 0;
   }
 }
@@ -2462,7 +2469,7 @@ th:nth-child(2) {
 /* フッター
 ----------------------------------------------------- */
 .footer-container {
-  width: 100%rem;
+  width: 100%;
   height: 16.2rem;
 }
 
@@ -2475,12 +2482,6 @@ th:nth-child(2) {
 .footer-sns {
   max-width: 100%;
 }
-
-/* @media (min-width: 768px) {
-  .footer-sns {
-    max-width: 100%;
-  }
-} */
 
 .footer-sns-li {
   background-color: #222222;
