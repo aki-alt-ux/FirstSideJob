@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-* {
-  box-sizing: border-box;
-  outline: #0079f2 solid 1px;
-}
-
 /* ページ全体のスタイル
 ------------------------------------------ */
 body {
@@ -26,6 +21,10 @@ img {
 
 li {
   list-style: none;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 
@@ -1525,13 +1524,13 @@ li {
 -----------------------------------------------------*/
 .characteristics-container {
   max-width: 100%;
-  margin: 0rem auto 0;
+  margin: 0 auto 0;
 }
 
 @media (min-width: 768px) {
   .characteristics-container {
     max-width: 100%;
-    margin: 4rem auto 0;
+    margin: 1rem auto 0;
   }
 }
 
@@ -1550,7 +1549,7 @@ li {
     color: #000;
     font-size: 2.25rem;
     margin-top: 0;
-    padding-top: 1.7rem;
+    padding-top: 4.7rem;
     font-weight: 700;
   }
 }
@@ -1767,8 +1766,8 @@ li {
   text-align: center;
   width: 7.5rem;
   font-size: 1.5rem;
-  margin: 4.5rem auto 0.97rem;
-  padding: 0 0 0.9rem 0;
+  margin: 0rem auto 0.97rem;
+  padding: 4.5rem 0 0.9rem 0;
   font-weight: 700;
 }
 
@@ -1777,7 +1776,8 @@ li {
     text-align: center;
     width: 15rem;
     font-size: 2.25rem;
-    margin: 6rem auto 1.67rem;
+    margin: 0.5rem auto 1.67rem;
+    padding: 5.5rem 0 0.9rem 0;
     font-weight: 700;
   }
 }
@@ -1914,8 +1914,8 @@ li {
   text-align: center;
   width: 7.5rem;
   font-size: 1.5rem;
-  margin: 0.25rem auto 0.7rem;
-  padding: 4rem 0 0.2rem 0;
+  margin: 0 auto 0.7rem;
+  padding: 4.25rem 0 0.2rem 0;
   font-weight: 700;
 }
 
@@ -1924,8 +1924,8 @@ li {
     text-align: center;
     width: 15rem;
     font-size: 2.25rem;
-    margin: 2rem auto 0.87rem;
-    padding: 4rem 0 1.1rem 0;
+    margin: 0.5rem auto 0.87rem;
+    padding: 5.5rem 0 1.1rem 0;
     font-weight: 700;
   }
 }
@@ -2217,9 +2217,9 @@ th:nth-child(2) {
 .faq-title {
   text-align: center;
   width: 15rem;
-  padding-bottom: 0.2rem;
   font-size: 1.5rem;
-  margin: 4.3rem auto 1.6rem;
+  margin: 0 auto 1.6rem;
+  padding: 4.3rem 0 0.2rem 0;
   font-weight: 700;
 }
 
@@ -2227,9 +2227,9 @@ th:nth-child(2) {
   .faq-title {
     text-align: center;
     width: 20rem;
-    padding-bottom: 0.6rem;
     font-size: 2.25rem;
-    margin: 6rem auto 1.47rem;
+    margin: 0.4rem auto 1.47rem;
+    padding: 5.5rem 0 0.6rem 0;
     font-weight: 700;
   }
 }
@@ -2352,7 +2352,7 @@ th:nth-child(2) {
   .ccordion-switch-box {
     display: flex;
     margin-top: 0;
-    margin-left: 0.85rem;
+    margin-left: 0.65rem;
   }
 }
 
@@ -2462,16 +2462,6 @@ th:nth-child(2) {
   }
 }
 
-/* .accordion-item:nth-of-type(2) .accordion-q .accordion-q-text{
-  margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .accordion-item:nth-of-type(2) .accordion-q .accordion-q-text{
-    margin-bottom: 0;
-  }
-} */
-
 .accordion-item:nth-of-type(2) .accordion-a .accordion-a-flex {
   padding: 0.2rem 0 0rem 0.95rem;
 }
@@ -2504,47 +2494,47 @@ th:nth-child(2) {
   .accordion-item:nth-of-type(3) .accordion-a .accordion-a-flex {
     padding: 1rem 0 1.9rem 1.4rem;
   }
+
+  .accordion-item:nth-of-type(3) .accordion-a .accordion-a-text {
+    max-width: 46rem;
+    margin: 0.4rem 0 0 0.85rem;
+  }
 }
 
 @media (min-width: 768px) {
   .accordion-item:nth-of-type(4) .accordion-q {
-    padding: 1rem 0 1.5rem 1.4rem;
+    padding: 1.2rem 0 1.5rem 1.4rem;
+  }
+
+  .accordion-item:nth-of-type(4) .accordion-a .accordion-a-text {
+    max-width: 46rem;
+    margin: 0.4rem 0 0 0.85rem;
   }
 }
 
 /* お問い合わせ（流用05）
 ----------------------------------------------------- */
-.inquiryDiversion05 {
-  height: 11.3rem;
-  background-color: #f2f8fe;
-}
-
-@media (min-width: 768px) {
-  .inquiryDiversion05 {
-    background-color: #f2f8fe;
-    line-height: 0;
-  }
-}
-
 .inquiryDiversion05 .inquiry-container {
-  margin-top: 5.6rem;
+  margin-top: 9.6rem;
 }
 
 @media (min-width: 768px) {
   .inquiryDiversion05 .inquiry-container {
-    height: 13.7rem;
-    margin-top: 4.2rem;
-    line-height: 1.75;
+    margin-top: 9.8rem;
   }
 }
 
 .inquiryDiversion05 .inquiry-text {
-  padding-top: 1.3rem;
+  margin: 4.8rem 5% 0;
+  padding-top: 1.5rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .inquiryDiversion05 .inquiry-text {
-    padding-top: 0;
+    margin: 0rem 5% 0rem;
+    padding-top: 1.8rem;
+    text-align: center;
   }
 }
 
@@ -2572,11 +2562,10 @@ th:nth-child(2) {
   display: flex;
   column-gap: 2.55rem;
   justify-content: center;
-  margin-top: 0.4rem;
-  padding-top: 2.2rem;
+  margin-top: 0rem;
+  padding-top: 2.05rem;
   font-size: 2rem;
   transition: color 0.3s ease;
-  /* トランジションを追加 */
 }
 
 .footer-sns-li .bi:hover {
@@ -2590,7 +2579,7 @@ th:nth-child(2) {
     display: flex;
     column-gap: 2.3rem;
     justify-content: center;
-    margin-top: 0.6rem;
+    margin-top: 0;
     padding-top: 2.1rem;
     font-size: 2rem;
   }
