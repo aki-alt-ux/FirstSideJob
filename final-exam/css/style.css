@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 * {
+  box-sizing: border-box;
   outline: #0079f2 solid 1px;
 }
 
@@ -1538,7 +1539,8 @@ li {
   color: #000;
   font-size: 1.5rem;
   text-align: center;
-  margin: 4.15rem 0 0;
+  margin: 0.15rem 0 0;
+  padding-top: 4rem;
   font-weight: 700;
 }
 
@@ -1547,7 +1549,8 @@ li {
     text-align: center;
     color: #000;
     font-size: 2.25rem;
-    margin-top: 5.8rem;
+    margin-top: 0;
+    padding-top: 1.7rem;
     font-weight: 700;
   }
 }
@@ -1570,31 +1573,26 @@ li {
   }
 }
 
-/* 画像 */
+/* 写真 */
 @media (min-width: 768px) {
   .characteristics-img-first {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2.3rem;
+    max-width: 67.5rem;
+    margin: 0 auto 2.3rem auto;
+    gap: 0.2rem;
   }
 }
-
-/* @media (min-width: 768px) {
-  .characteristics-img-first > * {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-} */
 
 @media (min-width: 768px) {
   .characteristics-img-second {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    max-width: 67.5rem;
+    margin: 0 auto 2.3rem auto;
     gap: 1rem;
-    margin-bottom: 2.45rem;
   }
 }
 
@@ -1603,7 +1601,9 @@ li {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    gap: 2rem;
+    max-width: 67.5rem;
+    margin: 0 auto 2.3rem auto;
+    gap: 0.2rem;
   }
 }
 
@@ -1616,18 +1616,17 @@ li {
 @media (min-width: 768px) {
   .characteristics-img {
     max-width: 100%;
+    text-align: end;
   }
 }
 
 .characteristics-img img {
-  max-width: 22.5rem;
   height: auto;
   border-radius: 2%;
 }
 
 @media (min-width: 768px) {
   .characteristics-img img {
-    max-width: 30.75rem;
     height: auto;
     border-radius: 2%;
     margin-top: 0.5rem;
@@ -1635,20 +1634,38 @@ li {
 }
 
 /* テキスト */
-.characteristics-text {
-  max-width: 22.5rem;
+.characteristics-text-box {
+  width: 22.5rem;
   margin-top: 0.6rem;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 768px) {
+  .characteristics-image-inner {
+    max-width: 32.6rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .characteristics-text-box {
+    width: 50%;
+  }
+
   .characteristics-text {
-    max-width: 32rem;
     text-align: left;
-    margin-top: 3.3rem;
+    margin-top: 3.4rem;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .characteristics-img-second .characteristics-text {
+    max-width: 32.6rem;
+    margin-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1669,14 +1686,14 @@ li {
     font-style: italic;
     font-weight: 700;
     font-size: 5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
 }
 
 .characteristics-text .normal-text {
   text-align: left;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
   font-size: 1.125rem;
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
@@ -1686,13 +1703,17 @@ li {
 @media (min-width: 768px) {
   .characteristics-text .normal-text {
     text-align: left;
-    padding-top: 0.1rem;
+    padding-top: 0.4rem;
     margin-bottom: 0;
-    padding-right: 1rem;
+    padding-right: 1.7rem;
     font-size: 1.5rem;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
   }
+}
+
+.characteristics-img-second .characteristics-text.normal-text {
+  letter-spacing: 0em;
 }
 
 @media (min-width: 768px) {
@@ -1732,6 +1753,7 @@ li {
 @media (min-width: 768px) {
   .inquiryDiversion02 .inquiry-text {
     margin: 0 10% 0;
+    padding-top: 2.1rem;
   }
 }
 
@@ -1744,9 +1766,9 @@ li {
 .LecturerIntroduction-title {
   text-align: center;
   width: 7.5rem;
-  padding-bottom: 1rem;
   font-size: 1.5rem;
   margin: 4.5rem auto 0.97rem;
+  padding: 0 0 0.9rem 0;
   font-weight: 700;
 }
 
@@ -1754,9 +1776,8 @@ li {
   .LecturerIntroduction-title {
     text-align: center;
     width: 15rem;
-    padding-bottom: 1.1rem;
     font-size: 2.25rem;
-    margin: 6rem auto 1.37rem;
+    margin: 6rem auto 1.67rem;
     font-weight: 700;
   }
 }
@@ -1879,6 +1900,7 @@ li {
 @media (min-width: 768px) {
   .inquiryDiversion03 .inquiry-text {
     margin-top: 5.858rem;
+    padding-top: 2rem;
   }
 }
 
@@ -1891,9 +1913,9 @@ li {
 .ratePlan-title {
   text-align: center;
   width: 7.5rem;
-  padding-bottom: 0.2rem;
   font-size: 1.5rem;
-  margin: 4.25rem auto 0.7rem;
+  margin: 0.25rem auto 0.7rem;
+  padding: 4rem 0 0.2rem 0;
   font-weight: 700;
 }
 
@@ -1901,9 +1923,9 @@ li {
   .ratePlan-title {
     text-align: center;
     width: 15rem;
-    padding-bottom: 1.1rem;
     font-size: 2.25rem;
-    margin: 6rem auto 0.67rem;
+    margin: 2rem auto 0.87rem;
+    padding: 4rem 0 1.1rem 0;
     font-weight: 700;
   }
 }
@@ -1922,7 +1944,7 @@ li {
     border: none;
     height: .1875rem;
     width: 2.25rem;
-    margin: 0.6rem auto 0;
+    margin: 0.7rem auto 0;
   }
 }
 
@@ -2207,7 +2229,7 @@ th:nth-child(2) {
     width: 20rem;
     padding-bottom: 0.6rem;
     font-size: 2.25rem;
-    margin: 6.2rem auto 1.47rem;
+    margin: 6rem auto 1.47rem;
     font-weight: 700;
   }
 }
@@ -2258,6 +2280,16 @@ th:nth-child(2) {
 }
 
 /* アコーディオンのQ部分 */
+.accordion-icon-box {
+  width: 2.4rem;
+}
+
+@media (min-width: 768px) {
+  .accordion-icon-box {
+    width: 3.2rem;
+  }
+}
+
 .accordion-q {
   display: flex;
   padding: 0.95rem 0 1.3rem 0.95rem;
@@ -2298,13 +2330,14 @@ th:nth-child(2) {
 .accordion-q-text {
   width: 17rem;
   margin-bottom: 0.05rem;
-  padding-left: 0.8rem;
+  padding-left: 0.3rem;
 }
 
 @media (min-width: 768px) {
   .accordion-q-text {
     width: 45rem;
     margin: 0.4rem 0 0 0.35rem;
+    padding-left: 0.6rem;
   }
 }
 
@@ -2312,7 +2345,7 @@ th:nth-child(2) {
 .ccordion-switch-box {
   display: flex;
   margin-top: 0.45rem;
-  margin-left: 0.6rem;
+  margin-left: 0.2rem;
 }
 
 @media (min-width: 768px) {
@@ -2350,6 +2383,7 @@ th:nth-child(2) {
   background-color: #ffeee5;
   display: flex;
   padding: 0.55rem 0 1rem 0;
+  border-radius: 0 0 0.437rem 0.437rem;
 }
 
 @media (min-width: 768px) {
@@ -2418,6 +2452,26 @@ th:nth-child(2) {
   transform: rotate(180deg);
 }
 
+.accordion-item:nth-of-type(2) .accordion-q {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .accordion-item:nth-of-type(2) .accordion-q {
+    margin-bottom: 0;
+  }
+}
+
+/* .accordion-item:nth-of-type(2) .accordion-q .accordion-q-text{
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .accordion-item:nth-of-type(2) .accordion-q .accordion-q-text{
+    margin-bottom: 0;
+  }
+} */
+
 .accordion-item:nth-of-type(2) .accordion-a .accordion-a-flex {
   padding: 0.2rem 0 0rem 0.95rem;
 }
@@ -2429,7 +2483,17 @@ th:nth-child(2) {
 }
 
 .accordion-item:nth-of-type(3) .accordion-q .accordion-q-text {
-  margin-top: 0.3rem;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .accordion-item:nth-of-type(3) .accordion-q {
+    padding: 1.2rem 0 1.5rem 1.4rem;
+  }
+
+  .accordion-item:nth-of-type(3) .accordion-q .accordion-q-text {
+    padding-top: 0.4rem;
+  }
 }
 
 .accordion-item:nth-of-type(3) .accordion-a .accordion-a-flex {
@@ -2439,6 +2503,12 @@ th:nth-child(2) {
 @media (min-width: 768px) {
   .accordion-item:nth-of-type(3) .accordion-a .accordion-a-flex {
     padding: 1rem 0 1.9rem 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion-item:nth-of-type(4) .accordion-q {
+    padding: 1rem 0 1.5rem 1.4rem;
   }
 }
 
@@ -2505,7 +2575,8 @@ th:nth-child(2) {
   margin-top: 0.4rem;
   padding-top: 2.2rem;
   font-size: 2rem;
-  transition: color 0.3s ease; /* トランジションを追加 */
+  transition: color 0.3s ease;
+  /* トランジションを追加 */
 }
 
 .footer-sns-li .bi:hover {
